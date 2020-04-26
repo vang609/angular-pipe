@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-10 left-pad">
+    <ng-container *ngIf="steps">
+      <div class="row step-row"
+        [ngClass]="{'selected-step-row': selectedStep === row.name, 'prev-step-btn': i < selectedStep}"
+        *ngFor="let row of steps; let i = index;">
+        <div class="step-btn" [class.last-step-row]="i === steps.length - 1" (click)="stepClck(row.name)">{{row.name}}
+        </div>
+        <div class="step-desc">{{row.head}}
+          <span *ngIf="selectedStep === row.name">{{row.desc}}</span>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

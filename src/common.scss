@@ -1,0 +1,692 @@
+$page-background: #f3f1f2;
+$tab-border-color: #dee2e6;
+$tab-content-background: #ffffff;
+$tab-font-color: #495057;
+$tab-head-background: #e6e6e6;
+$header-background: #d51e23;
+$logo-url: './assets/img/logo.png';
+$green-color: #49b875;
+$yellow-color: #ffcd41;
+$outlet-width: 85%;
+$input-error-color: #D71E28;
+
+// column function
+@mixin column($width) {
+    display: block;
+    width: $width;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 0;
+}
+
+@mixin row-width($width, $padding: 0, $margin: 0) {
+    width: $width;
+    box-sizing: border-box;
+    padding: $padding;
+    margin: $margin;
+    float: left;
+}
+
+input,
+button {
+    position: relative;
+}
+
+input[type=checkbox]:disabled{
+    background-color: $tab-border-color;
+}
+
+// kendo panel bar 
+
+.k-item {
+    box-sizing: border-box;
+
+    .k-content {
+        box-sizing: border-box;
+        padding: 15px;
+    }
+}
+
+.row-heading {
+    font-size: 16px;
+    float: left;
+}
+
+.row {
+    clear: both;
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.form-row {
+    margin-top: 15px;
+}
+
+.input-txt {
+    width: 520px !important;
+}
+
+label.form-row {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.col-1 {
+    @include column(10%)
+}
+
+.col-2 {
+    @include column(20%)
+}
+
+.col-2-5 {
+    @include column(25%)
+}
+
+.col-3 {
+    @include column(30%)
+}
+
+.col-4 {
+    @include column(40%)
+}
+
+.col-5 {
+    @include column(50%)
+}
+
+.col-6 {
+    @include column(60%)
+}
+
+.col-7 {
+    @include column(70%)
+}
+
+.col-8 {
+    @include column(80%)
+}
+
+.col-9 {
+    @include column(90%)
+}
+
+.col-10 {
+    @include column(100%)
+}
+
+.row-10 {
+    @include row-width(10%)
+}
+
+.row-20 {
+    @include row-width(20%)
+}
+
+.row-25 {
+    @include row-width(25%)
+}
+
+.row-30 {
+    @include row-width(30%)
+}
+
+.row-40 {
+    @include row-width(40%)
+}
+
+.row-50 {
+    @include row-width(50%)
+}
+
+.row-60 {
+    @include row-width(60%)
+}
+
+.row-70 {
+    @include row-width(70%)
+}
+
+.row-80 {
+    @include row-width(80%)
+}
+
+.row-90 {
+    @include row-width(90%)
+}
+
+.row-93 {
+    @include row-width(93%)
+}
+
+.row-100 {
+    @include row-width(100%)
+}
+
+.col-300 {
+    width: 300px;
+}
+
+.no-pad {
+    padding: 0
+}
+
+.left-pad {
+    padding-left: 0 !important
+}
+
+.right-pad {
+    padding-right: 0 !important
+}
+
+.top-pad {
+    padding-top: 0 !important
+}
+
+.bottom-pad {
+    padding-bottom: 0 !important
+}
+
+.step-row {
+    margin-bottom: 18px;
+    height: 35px;
+}
+
+.selected-step-row {
+    height: 60px;
+    overflow: hidden;
+}
+
+.selected-step-row .step-btn {
+    border-color: $green-color !important;
+    color: $green-color !important;
+}
+
+.prev-step-btn .step-btn {
+    border-color: $green-color !important;
+    background-color: $green-color !important;
+    color: $green-color !important;
+}
+
+.prev-step-btn .step-btn::after {
+    border: 1px solid $green-color !important;
+    background: $green-color !important;
+}
+
+.prev-step-btn .step-btn::before {
+    position: absolute;
+    margin-top: -1px;
+    margin-left: 9px;
+    float: left;
+    background: transparent;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 13px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.step-row:last-child {
+    margin-bottom: 0;
+}
+
+.step-btn {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: block;
+    background: #ffffff;
+    color: #898989;
+    padding-top: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    border-radius: 50px;
+    border: 2px solid #898989;
+}
+
+.step-btn::after {
+    position: absolute;
+    width: 0px;
+    height: 21px;
+    border: 1px solid #898989;
+    content: "";
+    margin-top: 23px;
+    margin-left: -5px;
+    float: left;
+    background: #898989;
+}
+
+.selected-step-row .step-btn::after {
+    height: 46px;
+}
+
+.selected-step-row .step-desc {
+    font-weight: bold;
+}
+
+.selected-step-row .step-desc span {
+    font-weight: normal;
+}
+
+.last-step-row::after {
+    position: absolute;
+    content: '';
+    width: 0 !important;
+    height: 0 !important;
+    border: 0 !important;
+    background: none;
+}
+
+.step-desc {
+    display: block;
+    box-sizing: border-box;
+    padding-left: 0px;
+    float: right;
+    width: 80%;
+    padding-top: 5px;
+    font-size: 15px;
+
+    span {
+        clear: both;
+        display: block;
+        font-size: 12px;
+        color: #cccccc;
+        padding-top: 5px;
+    }
+}
+
+.number-box .k-i-arrow-n::before {
+    content: '\002B' !important;
+    margin-top: -1px;
+    position: absolute;
+    margin-left: -5px;
+}
+
+.number-box .k-i-arrow-s::before {
+    content: '\2212' !important;
+}
+
+.k-dialog {
+    width: 60% !important;
+}
+
+.k-notification-group {
+    z-index: 999999;
+    width: 40%;
+    text-align: center;
+
+    .k-notification-container {
+        width: 100%;
+
+        .k-widget.k-notification {
+            width: 100%;
+            padding: 8px;
+            margin-top: 15px;
+            box-sizing: border-box;
+            border: 1px solid $page-background;
+        }
+    }
+}
+
+.k-column-resizer[_ngcontent-lnu-c256] {
+    cursor: col-resize;
+    display: block;
+    height: 1000%;
+    position: absolute;
+    top: 0;
+    width: .5em;
+}
+
+
+/*Wells Popup style*/
+
+html,
+body {
+    font-family: Verdana;
+    font-size: 13px;
+    color: #141414;
+}
+
+/*----------------------Input Class Start--------------------------*/
+.k-checkbox {
+    width: 24px;
+    height: 24px;
+    border-color: #B5ADAD;
+}
+
+.k-checkbox:checked {
+    border-color: #B5ADAD;
+    color: #3B3331;
+    background-color: #ffffff;
+}
+
+.k-textbox,
+.k-textarea,
+.k-input.k-textbox {
+    border-color: #B5ADAD;
+    color: #141414;
+    background-color: #fff;
+}
+
+.k-checkbox:hover,
+.k-textbox:hover,
+.k-textarea:hover,
+.k-input.k-textbox:hover {
+    border-color: #B5ADAD;
+}
+
+.k-checkbox:focus,
+.k-textbox:focus,
+.k-textbox.k-state-focus,
+.k-textarea:focus,
+.k-textarea.k-state-focus,
+.k-input.k-textbox:focus,
+.k-input.k-textbox.k-state-focus {
+    border-color: #688FCF;
+    color: #656565;
+    box-shadow: 1px 1px 4px 0px rgba(104, 143, 207, 1.00);
+}
+
+.k-checkbox:checked:focus {
+    border-color: #B5ADAD;
+    box-shadow: 0 0 0 1px rgba(104, 143, 207, 0.39);
+}
+
+.k-textbox {
+    height: calc(1.4285714286em + 22px);
+    border-radius: 2px;
+    margin-bottom: 7px;
+}
+
+.k-radio {
+    border-color: #B5ADAD;
+}
+
+.k-radio:checked {
+    border-color: #B5ADAD;
+    color: #141414;
+    background-color: #fff;
+}
+
+.k-radio:checked:focus {
+    border-color: #B5ADAD;
+    box-shadow: 0 0 0 1px rgba(104, 143, 207, 0.39);
+}
+
+.k-grid .k-state-selected {
+    background-color: rgba(235, 235, 235, 0.2) !important;
+}
+
+/*----------------------Grid Class Start--------------------------*/
+.k-dialog-titlebar {
+    border-color: #fff !important;
+    color: #3B3331;
+    background-color: #fff;
+    padding: 30px 30px 6px 30px;
+    border-radius: 10px;
+}
+
+.k-dialog-wrapper .k-dialog {
+    position: relative;
+    border-radius: 10px;
+}
+
+.k-window {
+    font-size: 13px;
+}
+
+.k-i-x {
+    color: #757474;
+    font-size: 26px;
+    font-weight: 100;
+}
+
+.k-window-title {
+    font-size: 28px;
+    font-family: Georgia Bold;
+}
+
+.k-grid-header .k-header {
+    background-color: #3B3331;
+    color: #fff;
+    border-right: 1px solid #B5ADAD;
+    font-size: 14px;
+}
+
+.k-grid-header .k-header>.k-link {
+    font-weight: bold;
+}
+
+.k-grid td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 13px;
+    color: #141414;
+}
+
+.k-grid .k-hierarchy-cell+td {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.k-detail-row {
+    background-color: #fff !important;
+}
+
+.k-grid .k-detail-row td:first-child {
+    border-right-width: 0px;
+    border-left-width: 1px;
+    border-top: 1px solid #ebebeb;
+}
+
+.k-grid .k-detail-row td:nth-child(2) {
+    border-right-width: 0px;
+    border-top: 1px solid #ebebeb;
+}
+
+.k-grid tr.k-state-selected>td {
+    color: #656565;
+    background-color: rgba(235, 235, 235, 0) !important;
+}
+
+.row-margin[_ngcontent-lnu-c304] {
+    margin: 6px 0 10px 0;
+}
+
+.k-window-content {
+    padding: 19px 30px;
+}
+
+.table-grid-detail {
+    border: 1px solid #688FCF !important;
+    border-left: 4px solid #688FCF !important;
+}
+
+/*----------------------Grid Pager Class Start--------------------------*/
+
+.k-grid-pager {
+    background-color: #ffffff;
+}
+
+.k-pager-numbers .k-link {
+    color: #434343;
+}
+
+.k-pager-numbers .k-link.k-state-selected {
+    color: #ffffff;
+    background-color: #434343 !important;
+}
+
+.k-pager-numbers .k-link:hover,
+.k-pager-numbers .k-link.k-state-hover {
+    color: #434343;
+    background-color: rgba(138, 127, 128, 0.08);
+}
+
+/*----------------------Grid Pager Class End--------------------------*/
+
+.mcci-head {
+    font-family: Georgia Bold;
+    font-size: 28px;
+    line-height: 32px;
+    padding-top: 24px;
+    color: #3B3331;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+/*----------------------Button Classes Start--------------------------*/
+.btn-primary {
+    width: 176px;
+    background-color: #D71E28;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    padding: 10px 0;
+
+}
+
+.btn-secondary {
+    width: 145px;
+    padding: 5px 0;
+    border: 1px solid #3B3331;
+    background-color: #ffffff;
+    background-image: none;
+    color: #3B3331;
+}
+
+.btn-secondary:hover {
+    background-color: #e4e4e4;
+    background-image: none;
+    color: #3B3331;
+    border: 1px solid #3B3331;
+}
+
+.k-dialog-content .btn-secondary {
+    margin-right: 16px;
+    float: left;
+    margin-top: 7px;
+}
+
+/*----------------------Button Classes End------------------------*/
+
+/*----------------------Message Matrix Classes End------------------------*/
+// .k-dialog-wrapper {
+//     border:2px solid #5A569B;
+// }
+
+kendo-dialog.message-dialog-container {
+    .k-window-content {
+        padding: 0 !important;
+        box-sizing: border-box;
+    }
+}
+
+.k-dialog-content .message-dialog {
+    margin: 0;
+    padding: 17px;
+    border: 2px solid #5A569B;
+    overflow: auto;
+}
+
+.k-dialog-content .message-dialog p {
+    float: left;
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 21px;
+    padding-left: 16px;
+    display: block;
+    color: #3B3331;
+    width: 359px;
+}
+
+.k-i-info {
+    font-size: 44px;
+    color: #5A569B;
+    float: left;
+}
+
+.k-i-error {
+    font-size: 44px;
+    color: #d51923;
+}
+
+.k-notification-error {
+    border-color: #d51923 !important;
+    border-width: 2px;
+    color: #3B3331;
+    background-color: #ffffff;
+    box-shadow: rgba(104, 143, 207, 1.00);
+    border-radius: 3px 3px 3px 3px;
+}
+
+.k-notification-content {
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 21px;
+    padding-left: 16px;
+    display: inline-block;
+    color: #3B3331;
+    align-self: center;
+}
+
+.k-notification-group .k-notification-container .k-widget.k-notification {
+    padding: 0 15px 0 0;
+}
+
+.k-notification-group .k-icon {
+    padding-left: 13px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+.k-tooltip {
+    background-color: #F7D2D4;
+    color: #141414;
+    font-size: 13px;
+    padding: 17px;
+}
+
+.k-tooltip .k-callout {
+    color: #F7D2D4;
+    margin-left: -245px !important;
+}
+
+.tooltip {
+    left: 0;
+}
+
+/*----------------------Desktop template Start--------------------------*/
+.container-holder {
+    width: 1158px;
+}
+
+.col-steppers {
+    width: 250px;
+    margin-right: 45px;
+    float: left;
+}
+
+.col-form {
+    width: 569px;
+    margin-right: 21px;
+    float: left;
+}
+
+.col-help {
+    width: 273px;
+    float: left;
+}
+
+/*----------------------Desktop template End--------------------------*/

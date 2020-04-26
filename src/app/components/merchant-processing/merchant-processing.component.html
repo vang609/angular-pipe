@@ -1,0 +1,21 @@
+<div class="row">
+    <span>MCC Finder</span>
+    <button type="button" kendoButton (click)="openMcciBox()" [look]="'flat'" [icon]="'search'"></button>
+  </div>
+  
+  <kendo-dialog title="Merchant Category Code (MCC) Finder" *ngIf="mcciDialogOpened" (close)="closeMcciBox()"
+    [width]="820" [height]="634">
+    <!-- Temporary sending hardcoded values for testing, later will bind with value from controller -->
+    <app-mcc-finder #mccFinder [b2bOption]=true [b2cOption]=false></app-mcc-finder>
+  </kendo-dialog>
+  
+  
+  <kendo-dialog title='' [width]="'100%'" [height]="84" *ngIf="closeMCCfinder" [minWidth]="150" [minHeight]="50"
+    [width]="150" class="message-dialog-container">
+    <div class="message-dialog">
+      <span class="k-icon k-i-info" ng-reflect-klass="k-icon" ng-reflect-ng-class="k-i-info"></span>
+      <p>Are you sure you want to close MCC Finder?</p>
+      <button kendoButton (click)="closeDialogAction('ok')" class="btn-secondary">OK</button>
+      <button kendoButton (click)="closeDialogAction('cancel')" class="btn-secondary">Cancel</button>
+    </div>
+  </kendo-dialog>

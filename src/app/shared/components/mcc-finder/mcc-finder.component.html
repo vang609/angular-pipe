@@ -1,0 +1,99 @@
+<div class="row">
+    <div class="row">
+        <div class="row"><strong>Select Transaction Source Type</strong></div>
+        <div class="row row-margin">
+            <div class="row-40 col-300" *ngFor="let c of sourceType">
+                <label><input #chck type="checkbox" (click)="selectedSourceType(c.code, chck.checked)"
+                        [disabled]="c.disable" [checked]="c.checked" kendoCheckBox />
+                    {{c.name}}</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row row-margin">
+            <div kendoTooltip tooltipWidth="520" class="bottom tooltip" showOn="none" position="bottom">
+                <input kendoTextBox type="search" class="input-txt" [class.input-error-border]="inputSrcBox"
+                    [(ngModel)]="srcString" (keydown.enter)="mccSrc($event, tooltipTemp)"
+                    placeholder="Search in all columns" (search)="clearSearchText()" autofocus />
+                <div class="tooltip" #tooltipTemp title="Please enter atleast 3 Characters or MCC Code"></div>
+            </div>
+        </div>
+        <div class="row tooltiprow-margin" *ngIf="!querySearched && mccData.length == 0"><strong>Note</strong>: Please
+            select
+            Transaction Source
+            Type and enter the
+            description to get the result.
+        </div>
+    </div>
+</div>
+<label *ngIf="mccData.length > 0" class="pt-4"><strong>Search Result:</strong></label>
+<label *ngIf="querySearched && mccData.length == 0" class="pt-4">No records found</label>
+<div class="row form-row" *ngIf="mccData.length > 0">
+    <kendo-grid #grid [selectable]="true" [pageSize]="pageSize" [pageable]="true" [skip]="skip" [data]="gridView"
+        [kendoGridBinding]="mccData" [height]="382" [navigable]="true" (sortChange)="sortChange($event)"
+        (selectionChange)="selectionChanged($event)" (cellClick)="onCellClick($event)" kendoGridSelectBy="mccCode"
+        [selectedKeys]="mySelection" (pageChange)="pageChange($event)" [sortable]="{
+                    allowUnsort: allowUnsort,
+                    mode: multiple ? 'multiple' : 'single'
+                    }">
+        <kendo-grid-column title="" [width]="40">
+            <ng-template kendoGridCellTemplate let-dataItem let-colIndex="colIndex" let-rowIndex="rowIndex">
+                <input type="radio" class="rowRadio" (click)="selectRow(dataItem, rowIndex, colIndex)" kendoRadioButton
+                    [checked]="selectedRowIndex === rowIndex" id="radioClick" />
+            </ng-template>
+        </kendo-grid-column>
+        <kendo-grid-column field="MCCCode" title="MCC" [width]="85"></kendo-grid-column>
+        <kendo-grid-column title="Title">
+            <ng-template kendoGridCellTemplate let-dataItem let-rowIndex="rowIndex">
+                <div class="flt-left">{{dataItem.MCCName}}</div>
+                <div class="flt-right" id="title_{{rowIndex}}"><a class="more-less"
+                        (click)="expandCollapseRow(dataItem, rowIndex)"><span>More</span>&nbsp;&darr;</a></div>
+            </ng-template>
+        </kendo-grid-column>
+        <ng-template kendoGridDetailTemplate let-dataItem>
+            <table width="100%" class="table-grid-detail">
+                <tbody>
+                    <tr>
+                        <td width="98"><span class="font-weight-bold">MCC Description</span></td>
+                        <td width="82%">{{dataItem.MCCDescription}}</td>
+                    </tr>
+                    <tr>
+                        <td width="98"><span class="font-weight-bold">Included in this MCC</span></td>
+                        <td width="82%">{{dataItem.Keywords}}</td>
+                    </tr>
+                    <tr>
+                        <td><span class="font-weight-bold">Similar Merchants</span></td>
+                        <td class="similar-merchant-table">
+                            <table class="" width="100%">
+                                <tbody>
+                                    <tr *ngFor="let merchant of dataItem.SimilarMerchants">
+                                        <td width="20%">{{merchant.MCCCode}}</td>
+                                        <td width="80%">{{merchant.MCCDescription}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </ng-template>
+        <ng-template kendoGridNoRecordsTemplate>
+            No Records
+        </ng-template>
+        <ng-template kendoPagerTemplate let-totalPages="totalPages" let-currentPage="currentPage">
+            <div class="row-20">
+                <kendo-pager-info></kendo-pager-info>
+            </div>
+            <div class="row-70">
+                <kendo-pager-prev-buttons class="prev-btn"></kendo-pager-prev-buttons>
+                <kendo-pager-numeric-buttons class="num-btn" [buttonCount]="2"></kendo-pager-numeric-buttons>
+                <kendo-pager-next-buttons class="next-btn"></kendo-pager-next-buttons>
+            </div>
+            <div class="row-10">
+                <button class="btn btn-primary flt-right" id="btnOk" name="btnOk"
+                    [disabled]="mccData.length==0 || isDisabled" (click)="okButton()">Ok</button>
+            </div>
+        </ng-template>
+    </kendo-grid>
+    <ng-template #notificationTemplate></ng-template>
+</div>
