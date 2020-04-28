@@ -1,17 +1,17 @@
-<div class="container">
+<div class="container main-container">
     <div class="row">
         <h2 class="row-heading">Create New Opportunity</h2>
         <button class="save-continue" kendoButton [primary]="true">Save & Continue</button>
         <button class="cancel" kendoButton [primary]="true">Cancel</button>
     </div>
-    <div class="row">
-        <div class="col-2-5 left-pad">
+    <div class="row main-container-holder">
+        <div class="col-2-5 left-pad stepper-col">
             <app-opportunity-stepper [currentStep]="currentStepperStep" (selectedStepNumber)="selectedStep($event)"></app-opportunity-stepper>
         </div>
-        <div class="col-5 left-pad">
+        <div class="col-5 form-col">
             <app-opportunity-form [currentStep]="currentStepperStep"></app-opportunity-form>
         </div>
-        <div class="col-2-5 left-pad">
+        <div class="col-2-5 right-col">
             <app-opportunity-helper></app-opportunity-helper>
         </div>
     </div>

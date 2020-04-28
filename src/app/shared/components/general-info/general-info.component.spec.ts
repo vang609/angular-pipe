@@ -19,7 +19,7 @@ describe('GeneralInfoComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create general info component', () => {
     expect(component).toBeTruthy();
   });
 });

@@ -19,7 +19,13 @@ describe('OpportunityComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create component', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should call selectedStep Function', () => {
+    component.selectedStep(1);
+    expect(component.selectedStep).toBeTruthy();
+  });
+
 });

@@ -19,7 +19,13 @@ describe('OpportunityFormComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create opportunity form component', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should call ngOnChanges', () => {
+    component.ngOnChanges();
+    expect(component.ngOnChanges).toBeTruthy();
+  });
+
 });

@@ -19,7 +19,7 @@ describe('MccContainerComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create mcc container component', () => {
     expect(component).toBeTruthy();
   });
 });

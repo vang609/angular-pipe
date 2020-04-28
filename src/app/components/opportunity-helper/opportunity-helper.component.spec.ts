@@ -19,7 +19,7 @@ describe('OpportunityHelperComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create opportunity helper component', () => {
     expect(component).toBeTruthy();
   });
 });

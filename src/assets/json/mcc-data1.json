@@ -2,2110 +2,380 @@
     {
         "result": [
             {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
+                "id": "313bd510-7594-4bc4-a94d-00a098ea1d78",
+                "mccCode": "3008",
+                "sicCode": "3008",
+                "createdOn": "2020-04-20T00:00:00",
+                "modifiedOn": "2020-04-20T00:00:00",
+                "mccName": "3008 - LUFTHAN",
+                "bVsC": "C",
+                "cbRatio": 0.00683,
+                "chgBckRatio": 0.000424316956950934,
+                "crDays": 45,
+                "crRatio": 0.12701,
+                "ecaCategory": "2B43B652-BB55-E611-942A-005056AA1442",
+                "keywords": "",
                 "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
+                "mccAmexType": "E",
+                "mccAvgTktInd": 0,
+                "mccDescription": "Lufthansa German Airlines",
                 "mccType": "I",
+                "ndxDays": 35,
+                "ndxRatio": 1,
+                "returnRatio": 0.0204282978763304,
+                "reversalRatio": 0.000306054213967417,
+                "riskLevel": "R",
+                "validMAI": 1,
+                "volumePercentAmex": 0,
+                "mcAuthValue": 865080001,
+                "isActive": true,
                 "similarMerchants": [
                     {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
+                        "id": "829e62f0-139e-4b3c-890b-788405e4db22",
+                        "mccCode": "3008",
+                        "mccName": "3008 - LUFTHAN",
+                        "mccDescription": "Lufthansa German Airlines"
                     }
                 ]
             },
             {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
+                "id": "313bd510-7594-4bc4-a94d-00a098ea1d78",
+                "mccCode": "3008",
+                "sicCode": "3008",
+                "createdOn": "2020-04-20T00:00:00",
+                "modifiedOn": "2020-04-20T00:00:00",
+                "mccName": "3008 - LUFTHAN",
+                "bVsC": "C",
+                "cbRatio": 0.00683,
+                "chgBckRatio": 0.000424316956950934,
+                "crDays": 45,
+                "crRatio": 0.12701,
+                "ecaCategory": "2B43B652-BB55-E611-942A-005056AA1442",
+                "keywords": "",
                 "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
+                "mccAmexType": "E",
+                "mccAvgTktInd": 0,
+                "mccDescription": "Lufthansa German Airlines",
                 "mccType": "I",
+                "ndxDays": 35,
+                "ndxRatio": 1,
+                "returnRatio": 0.0204282978763304,
+                "reversalRatio": 0.000306054213967417,
+                "riskLevel": "R",
+                "validMAI": 1,
+                "volumePercentAmex": 0,
+                "mcAuthValue": 865080001,
+                "isActive": true,
                 "similarMerchants": [
                     {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
+                        "id": "829e62f0-139e-4b3c-890b-788405e4db22",
+                        "mccCode": "3008",
+                        "mccName": "3008 - LUFTHAN",
+                        "mccDescription": "Lufthansa German Airlines"
                     }
                 ]
             },
             {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
+                "id": "313bd510-7594-4bc4-a94d-00a098ea1d78",
+                "mccCode": "3008",
+                "sicCode": "3008",
+                "createdOn": "2020-04-20T00:00:00",
+                "modifiedOn": "2020-04-20T00:00:00",
+                "mccName": "3008 - LUFTHAN",
+                "bVsC": "C",
+                "cbRatio": 0.00683,
+                "chgBckRatio": 0.000424316956950934,
+                "crDays": 45,
+                "crRatio": 0.12701,
+                "ecaCategory": "2B43B652-BB55-E611-942A-005056AA1442",
+                "keywords": "",
                 "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
+                "mccAmexType": "E",
+                "mccAvgTktInd": 0,
+                "mccDescription": "Lufthansa German Airlines",
                 "mccType": "I",
+                "ndxDays": 35,
+                "ndxRatio": 1,
+                "returnRatio": 0.0204282978763304,
+                "reversalRatio": 0.000306054213967417,
+                "riskLevel": "R",
+                "validMAI": 1,
+                "volumePercentAmex": 0,
+                "mcAuthValue": 865080001,
+                "isActive": true,
                 "similarMerchants": [
                     {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
+                        "id": "829e62f0-139e-4b3c-890b-788405e4db22",
+                        "mccCode": "3008",
+                        "mccName": "3008 - LUFTHAN",
+                        "mccDescription": "Lufthansa German Airlines"
                     }
                 ]
             },
             {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
+                "id": "313bd510-7594-4bc4-a94d-00a098ea1d78",
+                "mccCode": "3008",
+                "sicCode": "3008",
+                "createdOn": "2020-04-20T00:00:00",
+                "modifiedOn": "2020-04-20T00:00:00",
+                "mccName": "3008 - LUFTHAN",
+                "bVsC": "C",
+                "cbRatio": 0.00683,
+                "chgBckRatio": 0.000424316956950934,
+                "crDays": 45,
+                "crRatio": 0.12701,
+                "ecaCategory": "2B43B652-BB55-E611-942A-005056AA1442",
+                "keywords": "",
                 "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
+                "mccAmexType": "E",
+                "mccAvgTktInd": 0,
+                "mccDescription": "Lufthansa German Airlines",
                 "mccType": "I",
+                "ndxDays": 35,
+                "ndxRatio": 1,
+                "returnRatio": 0.0204282978763304,
+                "reversalRatio": 0.000306054213967417,
+                "riskLevel": "R",
+                "validMAI": 1,
+                "volumePercentAmex": 0,
+                "mcAuthValue": 865080001,
+                "isActive": true,
                 "similarMerchants": [
                     {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
+                        "id": "829e62f0-139e-4b3c-890b-788405e4db22",
+                        "mccCode": "3008",
+                        "mccName": "3008 - LUFTHAN",
+                        "mccDescription": "Lufthansa German Airlines"
                     }
                 ]
             },
             {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
+                "id": "313bd510-7594-4bc4-a94d-00a098ea1d78",
+                "mccCode": "3008",
+                "sicCode": "3008",
+                "createdOn": "2020-04-20T00:00:00",
+                "modifiedOn": "2020-04-20T00:00:00",
+                "mccName": "3008 - LUFTHAN",
+                "bVsC": "C",
+                "cbRatio": 0.00683,
+                "chgBckRatio": 0.000424316956950934,
+                "crDays": 45,
+                "crRatio": 0.12701,
+                "ecaCategory": "2B43B652-BB55-E611-942A-005056AA1442",
+                "keywords": "",
                 "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
+                "mccAmexType": "E",
+                "mccAvgTktInd": 0,
+                "mccDescription": "Lufthansa German Airlines",
                 "mccType": "I",
+                "ndxDays": 35,
+                "ndxRatio": 1,
+                "returnRatio": 0.0204282978763304,
+                "reversalRatio": 0.000306054213967417,
+                "riskLevel": "R",
+                "validMAI": 1,
+                "volumePercentAmex": 0,
+                "mcAuthValue": 865080001,
+                "isActive": true,
                 "similarMerchants": [
                     {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
+                        "id": "829e62f0-139e-4b3c-890b-788405e4db22",
+                        "mccCode": "3008",
+                        "mccName": "3008 - LUFTHAN",
+                        "mccDescription": "Lufthansa German Airlines"
                     }
                 ]
             },
             {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
+                "id": "313bd510-7594-4bc4-a94d-00a098ea1d78",
+                "mccCode": "3008",
+                "sicCode": "3008",
+                "createdOn": "2020-04-20T00:00:00",
+                "modifiedOn": "2020-04-20T00:00:00",
+                "mccName": "3008 - LUFTHAN",
+                "bVsC": "C",
+                "cbRatio": 0.00683,
+                "chgBckRatio": 0.000424316956950934,
+                "crDays": 45,
+                "crRatio": 0.12701,
+                "ecaCategory": "2B43B652-BB55-E611-942A-005056AA1442",
+                "keywords": "",
                 "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
+                "mccAmexType": "E",
+                "mccAvgTktInd": 0,
+                "mccDescription": "Lufthansa German Airlines",
                 "mccType": "I",
+                "ndxDays": 35,
+                "ndxRatio": 1,
+                "returnRatio": 0.0204282978763304,
+                "reversalRatio": 0.000306054213967417,
+                "riskLevel": "R",
+                "validMAI": 1,
+                "volumePercentAmex": 0,
+                "mcAuthValue": 865080001,
+                "isActive": true,
                 "similarMerchants": [
                     {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
+                        "id": "829e62f0-139e-4b3c-890b-788405e4db22",
+                        "mccCode": "3008",
+                        "mccName": "3008 - LUFTHAN",
+                        "mccDescription": "Lufthansa German Airlines"
                     }
                 ]
             },
             {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
+                "id": "313bd510-7594-4bc4-a94d-00a098ea1d78",
+                "mccCode": "3008",
+                "sicCode": "3008",
+                "createdOn": "2020-04-20T00:00:00",
+                "modifiedOn": "2020-04-20T00:00:00",
+                "mccName": "3008 - LUFTHAN",
+                "bVsC": "C",
+                "cbRatio": 0.00683,
+                "chgBckRatio": 0.000424316956950934,
+                "crDays": 45,
+                "crRatio": 0.12701,
+                "ecaCategory": "2B43B652-BB55-E611-942A-005056AA1442",
+                "keywords": "",
                 "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
+                "mccAmexType": "E",
+                "mccAvgTktInd": 0,
+                "mccDescription": "Lufthansa German Airlines",
                 "mccType": "I",
+                "ndxDays": 35,
+                "ndxRatio": 1,
+                "returnRatio": 0.0204282978763304,
+                "reversalRatio": 0.000306054213967417,
+                "riskLevel": "R",
+                "validMAI": 1,
+                "volumePercentAmex": 0,
+                "mcAuthValue": 865080001,
+                "isActive": true,
                 "similarMerchants": [
                     {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
+                        "id": "829e62f0-139e-4b3c-890b-788405e4db22",
+                        "mccCode": "3008",
+                        "mccName": "3008 - LUFTHAN",
+                        "mccDescription": "Lufthansa German Airlines"
                     }
                 ]
             },
             {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
+                "id": "313bd510-7594-4bc4-a94d-00a098ea1d78",
+                "mccCode": "3008",
+                "sicCode": "3008",
+                "createdOn": "2020-04-20T00:00:00",
+                "modifiedOn": "2020-04-20T00:00:00",
+                "mccName": "3008 - LUFTHAN",
+                "bVsC": "C",
+                "cbRatio": 0.00683,
+                "chgBckRatio": 0.000424316956950934,
+                "crDays": 45,
+                "crRatio": 0.12701,
+                "ecaCategory": "2B43B652-BB55-E611-942A-005056AA1442",
+                "keywords": "",
                 "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
+                "mccAmexType": "E",
+                "mccAvgTktInd": 0,
+                "mccDescription": "Lufthansa German Airlines",
                 "mccType": "I",
+                "ndxDays": 35,
+                "ndxRatio": 1,
+                "returnRatio": 0.0204282978763304,
+                "reversalRatio": 0.000306054213967417,
+                "riskLevel": "R",
+                "validMAI": 1,
+                "volumePercentAmex": 0,
+                "mcAuthValue": 865080001,
+                "isActive": true,
                 "similarMerchants": [
                     {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
+                        "id": "829e62f0-139e-4b3c-890b-788405e4db22",
+                        "mccCode": "3008",
+                        "mccName": "3008 - LUFTHAN",
+                        "mccDescription": "Lufthansa German Airlines"
                     }
                 ]
             },
             {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
+                "id": "313bd510-7594-4bc4-a94d-00a098ea1d78",
+                "mccCode": "3008",
+                "sicCode": "3008",
+                "createdOn": "2020-04-20T00:00:00",
+                "modifiedOn": "2020-04-20T00:00:00",
+                "mccName": "3008 - LUFTHAN",
+                "bVsC": "C",
+                "cbRatio": 0.00683,
+                "chgBckRatio": 0.000424316956950934,
+                "crDays": 45,
+                "crRatio": 0.12701,
+                "ecaCategory": "2B43B652-BB55-E611-942A-005056AA1442",
+                "keywords": "",
                 "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
+                "mccAmexType": "E",
+                "mccAvgTktInd": 0,
+                "mccDescription": "Lufthansa German Airlines",
                 "mccType": "I",
+                "ndxDays": 35,
+                "ndxRatio": 1,
+                "returnRatio": 0.0204282978763304,
+                "reversalRatio": 0.000306054213967417,
+                "riskLevel": "R",
+                "validMAI": 1,
+                "volumePercentAmex": 0,
+                "mcAuthValue": 865080001,
+                "isActive": true,
                 "similarMerchants": [
                     {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
+                        "id": "829e62f0-139e-4b3c-890b-788405e4db22",
+                        "mccCode": "3008",
+                        "mccName": "3008 - LUFTHAN",
+                        "mccDescription": "Lufthansa German Airlines"
                     }
                 ]
             },
             {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
+                "id": "313bd510-7594-4bc4-a94d-00a098ea1d78",
+                "mccCode": "3008",
+                "sicCode": "3008",
+                "createdOn": "2020-04-20T00:00:00",
+                "modifiedOn": "2020-04-20T00:00:00",
+                "mccName": "3008 - LUFTHAN",
+                "bVsC": "C",
+                "cbRatio": 0.00683,
+                "chgBckRatio": 0.000424316956950934,
+                "crDays": 45,
+                "crRatio": 0.12701,
+                "ecaCategory": "2B43B652-BB55-E611-942A-005056AA1442",
+                "keywords": "",
                 "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8bc15cf673486800345c",
-                "mccCode": "0742",
-                "sicCode": "0742",
-                "mccName": "Veterinary Services",
-                "keywords": "Animal Doctors, Hosipitals, Clinics - Pets, Hospitals - Pets, Pet Clinics, Services - Veterinary",
-                "markedforB2B": "Y",
-                "mccDescription": "Merchant Classified with this MCC are licensed practitioners of veterinary medicine, dentistry, or surgery.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8bc15cf673486800345b",
-                        "mccCode": "5995",
-                        "mccName": "Pet Shops, Pet Foods and Supplies Store.",
-                        "mccDescription": "Merchant Classified with this MCC are licensed Stores for pets and Pet Foods."
-                    }
-                ]
-            },
-            {
-                "id": "5e9c8e315cf673486800345f",
-                "mccCode": "0763",
-                "sicCode": "5261",
-                "mccName": "Agricultural Co-operatives",
-                "keywords": "Farm Management, Services, Ocrhards, Vineyards",
-                "markedforB2B": "N",
-                "mccDescription": "Merchant Classified with this MCC provide farm management services or engage in farming operations.",
-                "mccType": "I",
-                "similarMerchants": [
-                    {
-                        "id": "5e9c8e315cf673486800345d",
-                        "mccCode": "0780",
-                        "mccName": "Landscape and Horticultural",
-                        "mccDescription": "Merchant Classified with this MCC are licensed for Landscaping and Horticultural Activities."
-                    },
-                    {
-                        "id": "5e9c8e315cf673486800345e",
-                        "mccCode": "4225",
-                        "mccName": "PUBLIC WAREHOUSING-FARM PROD,REFRIDGERATION",
-                        "mccDescription": "Merchant Classified with this MCC are licensed to sell Farm Products, Refrigerated Good."
+                "mccAmexType": "E",
+                "mccAvgTktInd": 0,
+                "mccDescription": "Lufthansa German Airlines",
+                "mccType": "I",
+                "ndxDays": 35,
+                "ndxRatio": 1,
+                "returnRatio": 0.0204282978763304,
+                "reversalRatio": 0.000306054213967417,
+                "riskLevel": "R",
+                "validMAI": 1,
+                "volumePercentAmex": 0,
+                "mcAuthValue": 865080001,
+                "isActive": true,
+                "similarMerchants": [
+                    {
+                        "id": "829e62f0-139e-4b3c-890b-788405e4db22",
+                        "mccCode": "3008",
+                        "mccName": "3008 - LUFTHAN",
+                        "mccDescription": "Lufthansa German Airlines"
                     }
                 ]
             }
         ],
         "statusMessage": {
-            "msgCode": "0001",
-            "msgDescription": "RECORD RETURN SUCCESSFULLY",
-            "msgType": "success",
+            "msgCode": "MO-101",
+            "msgDescription": "Records Returned Successfully",
+            "msgType": "Information",
             "service": "merchantcategorycode",
             "api": "SearchMerchantCategoryCode"
         }

@@ -67,12 +67,14 @@ table {
 
 .k-grid td,
 .k-grid th:nth-child(4) {
-    pointer-events: none;
+    // pointer-events: none;
+    pointer-events: visibleStroke;
 }
 
 .k-grid td.k-state-focused,
 .k-grid th.k-state-focused {
-    box-shadow: none !important;
+    // box-shadow: none !important;
+    box-shadow: darken($color: #000000, $amount: 0);
 }
 
 .rowRadio {

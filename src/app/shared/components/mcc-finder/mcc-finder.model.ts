@@ -1,55 +1,44 @@
 export interface GridResponse {
-    '_id': string;
-    'MCCCode': string;
-    'SICCode': string;
-    'Statecode': number;
-    'StatusCode': number;
-    'MCCName': string;
-    'ActiveInd': boolean;
-    'BVsC': string;
-    'CBRatio': number;
-    'ChgBckRatio': number;
-    'CRDays': number;
-    'CRRatio': number;
-    'DerivedMCC': string;
-    'DiscoverEASIRestrict': string;
-    'ECACategory': string;
-    'InactiveInd': boolean;
-    'Keyword': string;
-    'Keywords': string;
-    'MarkedforB2B': string;
-    'MCCCodeId': string;
-    'MCCAmexType': string;
-    'MCCAvgTktInd': number;
-    'MCCCreditType': string;
-    'MCCDescription': string;
-    'MCCType': string;
-    'NDXDays': number;
-    'NDXRatio': number;
-    'ProductServiceType': string;
-    'ReturnRatio': number;
-    'ReversalRatio': number;
-    'RiskLevel': string;
-    'RiskLevelB2B': number;
-    'RiskLevelInternet': string;
-    'ValidMAI': number;
-    'ValidMerlin': number;
-    'VolumePercentAmex': number;
-    'MCAuthValue': number;
-    'IsActive': boolean;
-    'SimilarMerchants': Array<SimilarMerchants>;
+    id: string;
+    mccCode: string;
+    sicCode: string;
+    createdOn: string;
+    modifiedOn: string;
+    mccName: string;
+    bVsC: string;
+    cbRatio: number;
+    chgBckRatio: number;
+    crDays: number;
+    crRatio: number;
+    ecaCategory: string;
+    keywords: string;
+    markedforB2B: string;
+    mccAmexType: string;
+    mccAvgTktInd: number;
+    mccDescription: string;
+    mccType: string;
+    ndxDays: number;
+    ndxRatio: number;
+    returnRatio: number;
+    reversalRatio: number;
+    riskLevel: string;
+    validMAI: number;
+    volumePercentAmex: number;
+    mcAuthValue: number;
+    isActive: boolean;
+    similarMerchants: Array<SimilarMerchants>;
 }
 
 export interface SimilarMerchants {
-    '_id': string;
-    'MCCCode': string;
-    'MCCName': string;
-    'MCCDescription': string;
+    id: string;
+    mccCode: string;
+    mccName: string;
+    mccDescription: string;
 }
 
 export interface SourceType {
-    'name': string;
-    'code': string;
-    'checked': boolean;
-    'disable': boolean;
+    name: string;
+    code: string;
+    checked: boolean;
+    disable: boolean;
 }

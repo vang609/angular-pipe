@@ -72,7 +72,7 @@ input[type=checkbox]:disabled{
 }
 
 label.form-row {
-    font-size: 15px;
+    font-size: 12px;
     margin-bottom: 5px;
 }
 
@@ -424,6 +424,31 @@ body {
 .k-grid .k-state-selected {
     background-color: rgba(235, 235, 235, 0.2) !important;
 }
+.input-txt-100w{
+    width:100%;
+}
+.input-txt-50w{
+    width:50%;
+    height:39px;
+}
+
+.input-holder-100w{
+    width:100%;
+}
+.input-holder-50w{
+    width:14.6em;
+}
+.input-holder-50w .k-textbox{
+    height: 42px;
+    border: 1px solid #B5ADAD;
+    width:100% !important;
+    
+}
+.input-holder-50w .k-textbox:focus{
+    border-color: #688FCF;
+    color: #656565;
+    box-shadow: 1px 1px 4px 0px rgba(104, 143, 207, 1.00);
+}
 
 /*----------------------Grid Class Start--------------------------*/
 .k-dialog-titlebar {
@@ -433,7 +458,6 @@ body {
     padding: 30px 30px 6px 30px;
     border-radius: 10px;
 }
-
 .k-dialog-wrapper .k-dialog {
     position: relative;
     border-radius: 10px;
@@ -452,6 +476,7 @@ body {
 .k-window-title {
     font-size: 28px;
     font-family: Georgia Bold;
+    font-weight: bold;
 }
 
 .k-grid-header .k-header {
@@ -509,7 +534,20 @@ body {
     border: 1px solid #688FCF !important;
     border-left: 4px solid #688FCF !important;
 }
+.k-grid .k-detail-row td{
+    padding:5px 10px;
+}
+.k-grid .k-detail-row .similar-merchant-table{
+    vertical-align: top;
+}
+.k-grid .k-detail-row .similar-merchant-table table{
+    min-height:47px;
+}
 
+.grid-btn{
+    margin-top:-43px;
+    margin-right: 7px;
+}
 /*----------------------Grid Pager Class Start--------------------------*/
 
 .k-grid-pager {
@@ -667,26 +705,92 @@ kendo-dialog.message-dialog-container {
     left: 0;
 }
 
+
+/// Placeholder
+::-webkit-input-placeholder {
+    color: #777676 !important;
+}
+
+::-ms-input-placeholder {
+    color: #777676 !important;
+}
+
+::-moz-placeholder {
+    color: #777676 !important;
+}
+/// Placeholder end
+
 /*----------------------Desktop template Start--------------------------*/
-.container-holder {
-    width: 1158px;
+.main-container-holder{
+    display: flex;
+}
+.main-container-holder .stepper-col, .main-container-holder .form-col, .main-container-holder .right-col{
+    display: flow-root;
 }
 
-.col-steppers {
-    width: 250px;
-    margin-right: 45px;
-    float: left;
+.main-container .col-2-5{
+    padding-top:0;
 }
-
-.col-form {
-    width: 569px;
-    margin-right: 21px;
-    float: left;
+.main-container .col-5{
+    width:46%;
+    padding:10px;
 }
-
-.col-help {
-    width: 273px;
-    float: left;
+.main-container .stepper-col{
+    margin-top:-10px;
 }
-
+.main-container .form-col{
+    border:1px solid #B5ADAD;
+    border-radius: 4px;
+    margin-right:21px;
+    margin-left:21px;
+}
+.main-container .right-col{
+    background-color:#F4F0ED;
+    border-radius: 4px;
+}
+.main-container label.form-row{
+    font-weight: bold; 
+    color: #3B3331;   
+}
+.mainlable{
+    font-size:14px;
+    font-weight: bold;
+}
+.hr-line{
+    border:0px; 
+    border-bottom: 1px dashed #979797;
+    margin-top:15px;
+}
 /*----------------------Desktop template End--------------------------*/
+
+ 
+/*----------------------------------------------- Media Class -----------------------------------------*/
+/*----------------------Max width 1024 --------------------------*/
+
+/*----------------------Max width 768 --------------------------*/
+@media screen and (max-width: 768px) {
+    .k-window-title {
+        font-size: 25px;
+        white-space: break-spaces;
+    }
+    .input-txt{
+        width:100% !important;
+    }
+    .bottom {
+        width: 100% !important;
+     }
+  }
+/*----------------------Max width 766 --------------------------*/
+@media screen and (max-width: 766px) {
+    .col-300 {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .k-dialog {
+        width: 96% !important;
+    }
+    .k-window-title {
+        font-size: 20px;
+    }
+}
+
