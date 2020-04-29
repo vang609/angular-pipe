@@ -1,4 +1,4 @@
-import { GridResponse, SourceType } from "./mcc-finder.model";
+import { GridResponse, SourceType } from './mcc-finder.model';
 // Angular Core
 import {
   Component,
@@ -10,46 +10,46 @@ import {
   ViewEncapsulation,
   OnDestroy,
   ElementRef,
-} from "@angular/core";
+} from '@angular/core';
 
 // Services
-import { MccFinderService } from "./mcc-finder.service";
-import { ShareDataService } from "../../service/shareData.service ";
+import { MccFinderService } from './mcc-finder.service';
+import { ShareDataService } from '../../service/shareData.service ';
 
 // Kendo
-import { TooltipDirective } from "@progress/kendo-angular-tooltip";
-import { SortDescriptor, orderBy } from "@progress/kendo-data-query";
-import { NotificationService } from "@progress/kendo-angular-notification";
+import { TooltipDirective } from '@progress/kendo-angular-tooltip';
+import { SortDescriptor, orderBy } from '@progress/kendo-data-query';
+import { NotificationService } from '@progress/kendo-angular-notification';
 import {
   PageSizeItem,
   GridDataResult,
   CellClickEvent,
   GridComponent,
   PageChangeEvent,
-} from "@progress/kendo-angular-grid";
+} from '@progress/kendo-angular-grid';
 
 // RxJs
-import { filter } from "rxjs/operators";
-import { debounceTime } from "rxjs/operators";
-import { distinctUntilChanged } from "rxjs/operators";
-import { Subscription, Observable } from 'rxjs';
-import { switchMap } from "rxjs/operators";
+import { filter } from 'rxjs/operators';
+import { debounceTime } from 'rxjs/operators';
+import { distinctUntilChanged } from 'rxjs/operators';
+import { Subscription, Observable, of } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 // Constants
-import * as c from "./mcc-finder.constant";
+import * as c from './mcc-finder.constant';
 
 // Store
-import { Store } from "@ngrx/store";
-import { AppState } from "../../../root-store/app.reducers";
-import * as loadAction from "../../../root-store/actions/loading.actions";
+import { Store } from '@ngrx/store';
+import { AppState } from '../../../root-store/app.reducers';
+import * as loadAction from '../../../root-store/actions/loading.actions';
 
 //  Models
-import { Message } from "../../models/message.model";
+import { Message } from '../../models/message.model';
 
 @Component({
-  selector: "app-mcc-finder",
-  templateUrl: "./mcc-finder.component.html",
-  styleUrls: ["./mcc-finder.component.scss"],
+  selector: 'app-mcc-finder',
+  templateUrl: './mcc-finder.component.html',
+  styleUrls: ['./mcc-finder.component.scss'],
   providers: [MccFinderService, NotificationService, ShareDataService],
   encapsulation: ViewEncapsulation.None,
 })
@@ -59,12 +59,12 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
     private notificationService: NotificationService,
     private store: Store<AppState>,
     private shareDataService: ShareDataService
-  ) {}
+  ) { }
 
   message$: Subscription;
   message: Message;
 
-  @ViewChild("notificationTemplate", { read: TemplateRef })
+  @ViewChild('notificationTemplate', { read: TemplateRef })
   public notificationTemplate: TemplateRef<any>;
   notificationMsg: string;
   mccData: Array<GridResponse> = [];
@@ -74,22 +74,22 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
   srcStringMinLength: number;
   public pageSize = 6;
   public skip = 0;
-  public type = "numeric";
+  public type = 'numeric';
   public multiple = false;
   public allowUnsort = true;
-  public sort: SortDescriptor[] = [{ field: "mcc", dir: "asc" }];
+  public sort: SortDescriptor[] = [{ field: 'mcc', dir: 'asc' }];
   public sourceType: Array<SourceType> = [
     {
       name: c.sourceType.b2bName,
       code: c.sourceType.b2bCode,
       checked: false,
-      disable: false,
+      disable: false
     },
     {
       name: c.sourceType.b2cName,
       code: c.sourceType.b2cCode,
       checked: false,
-      disable: false,
+      disable: false
     },
   ];
   selectedSourceTypeArray: Array<string> = [];
@@ -98,7 +98,7 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
   selectedRowIndex: number;
   @Input() b2bOption: boolean;
   @Input() b2cOption: boolean;
-  @ViewChild("grid") grid: GridComponent;
+  @ViewChild('grid') grid: GridComponent;
   @ViewChild(TooltipDirective)
   public tooltipDir: TooltipDirective;
   isDisabled: boolean;
@@ -110,8 +110,6 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
   inputSrcBox: boolean;
   public rowExpand: boolean;
   showPagination = false;
-  errorMsg: string;
-
 
   ngOnInit(): void {
     this.loading = false;
@@ -125,13 +123,14 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
     });
 
     this.loading$ = this.store
-      .select("load")
+      .select('load')
       .subscribe(({ isLoading }) => (this.loading = isLoading));
-    this.message$ = this.store.select("msg").subscribe(({ message }) => {
-      if (message) {
-        this.showNotification(message);
-      }
-    });
+    this.message$ = this.store.select('msg')
+      .subscribe(({ message }) => {
+        if (message) {
+          this.showNotification(message);
+        }
+      });
   }
 
   ngOnDestroy(): void {
@@ -154,28 +153,25 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
     }
   }
 
-  onCellClick(event: CellClickEvent): void {}
+  onCellClick(event: CellClickEvent): void { }
 
   // Expand-Collapse Grid Row
   expandCollapseRow(event, rowindex: number): void {
-    this.rowExpand =
-      this.expandedRow.filter((rowIndex) => rowIndex === rowindex).length > 0;
+    this.rowExpand = this.expandedRow.filter((rowIndex) => rowIndex === rowindex).length > 0;
     if (this.rowExpand) {
       // this.isDisabled = true;
       this.grid.collapseRow(rowindex);
-      this.expandedRow = this.expandedRow.filter(
-        (rowIndex) => rowIndex !== rowindex
-      );
+      this.expandedRow = this.expandedRow.filter((rowIndex) => rowIndex !== rowindex);
       this.grid.wrapper.nativeElement.querySelector(
         `.k-grid-table tbody #title_${rowindex} .more-less`
-      ).innerHTML = "<span>More</span>&nbsp;&darr;";
+      ).innerHTML = '<span>More</span>&nbsp;&darr;';
     } else {
       // this.isDisabled = false;
       this.grid.expandRow(rowindex);
       this.expandedRow.push(rowindex);
       this.grid.wrapper.nativeElement.querySelector(
         `.k-grid-table tbody #title_${rowindex} .more-less`
-      ).innerHTML = "<span>Less</span>&nbsp;&uarr;";
+      ).innerHTML = '<span>Less</span>&nbsp;&uarr;';
     }
   }
 
@@ -206,6 +202,7 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   mccSrc(event, eventTarget): void {
+    this.srcString = this.srcString.trim();
     if (this.srcString.length > this.srcStringMinLength) {
       this.tooltipDir.hide();
       this.mccData = [];
@@ -216,7 +213,7 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
       this.inputSrcBox = true;
       let leftMargin;
       const popup: HTMLElement = document.querySelector(
-        ".k-widget.k-window.k-dialog"
+        '.k-widget.k-window.k-dialog'
       );
       if (popup) {
         leftMargin = popup.offsetLeft + event.target.offsetLeft;
@@ -224,12 +221,20 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
         leftMargin = event.target.offsetLeft;
       }
       const tooltipWrapper = document.getElementsByClassName(
-        "k-tooltip-wrapper"
+        'k-tooltip-wrapper'
       ) as HTMLCollectionOf<HTMLElement>;
       setTimeout(() => {
         tooltipWrapper[0].style.left = `${leftMargin}px`;
       });
+      setTimeout(() => {
+        this.hideToolTipFunc();
+        this.inputSrcBox = false;
+      }, 3000);
     }
+  }
+
+  hideToolTipFunc() {
+    this.tooltipDir.hide();
   }
 
   // Close Popup
@@ -246,17 +251,14 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
       ? this.sourceType.find((row) => row.checked).code
       : null;
     this.mccFinderService.getMCCIData(this.srcString, code).subscribe((res) => {
-      console.log('res => ')
-      console.log(res)
+      this.querySearched = true;
       if (res && res[0] && res[0].result && res[0].result.length > 0) {
-        this.querySearched = true;
         this.mccData = res[0].result;
         this.showPagination = this.mccData.length > 6 ? true : false;
         this.loadItems();
         this.store.dispatch(loadAction.stopLoading());
       }
-    }
-    );
+    });
   }
 
   // Load items in grid
@@ -316,27 +318,38 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
       this.sourceType.forEach((chckBox) => (chckBox.disable = false));
     }
     this.clearSearchText();
+    if (this.selectedSourceTypeArray.length === 0) {
+      this.srcString = null;
+    }
   }
 
-  valuechange(newValue) {
-    const mymodel = newValue;
-    const hello = Observable.create((observer) => {
-      observer.next(newValue);
-    });
-    hello
-      .pipe(
-        debounceTime(1000),
-        distinctUntilChanged(),
-        switchMap((query) => this.mccFinderService.getMCCIData(query, "N"))
-      )
-      .subscribe((i) => {
-        if (i && i[0] && i[0].result && i[0].result.length > 0) {
-          this.querySearched = true;
-          this.mccData = i[0].result;
-          this.loadItems();
-          // this.store.dispatch(loadAction.stopLoading());
-        }
+  valuechange() {
+    this.srcString = this.srcString.trim();
+    if (this.srcString.length > this.srcStringMinLength) {
+      const code = this.sourceType.find((row) => row.checked)
+        ? this.sourceType.find((row) => row.checked).code
+        : null;
+      const searchQuery = Observable.create((observer) => {
+        observer.next(this.srcString);
       });
+      searchQuery
+        .pipe(
+          debounceTime(1000),
+          distinctUntilChanged(),
+          switchMap((query) => this.mccFinderService.getMCCIData(query, code))
+        )
+        .subscribe((res) => {
+          this.mccData = [];
+          this.selectedRowData = this.selectedRowIndex = null;
+          this.querySearched = true;
+          if (res && res[0] && res[0].result && res[0].result.length > 0) {
+            this.mccData = res[0].result;
+            this.showPagination = this.mccData.length > 6 ? true : false;
+            this.loadItems();
+            this.store.dispatch(loadAction.stopLoading());
+          }
+        });
+    }
   }
 
   // Clear text in input box
@@ -348,11 +361,11 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
 
   // Show notiifcation
   showNotification(data: any): void {
-    this.notificationMsg = data.msgDescription;
+    this.notificationMsg = data.descriptiondha;
     this.notificationService.show({
       content: this.notificationMsg,
-      position: { horizontal: "center", vertical: "top" },
-      animation: { type: "fade", duration: 800 },
+      position: { horizontal: 'center', vertical: 'top' },
+      animation: { type: 'fade', duration: 800 },
       type: { style: data.msgType, icon: true },
       closable: true,
     });

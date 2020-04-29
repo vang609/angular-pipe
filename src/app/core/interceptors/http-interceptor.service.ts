@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent, HttpErrorResponse, HttpEventType } from '@angular/common/http';
 import { Observable, throwError, BehaviorSubject } from 'rxjs';
-import { catchError, tap, map, finalize } from 'rxjs/operators';
+import { catchError, tap } from 'rxjs/operators';
 import { ShareDataService } from '../../shared/service/shareData.service ';
 import { Error } from '../../shared/constant/error.constant';
 import { Store } from '@ngrx/store';
@@ -14,26 +14,30 @@ import { Message } from '../../shared/models/message.model';
 })
 export class HttpInterceptorService implements HttpInterceptor {
 
+  // messageMatrixSubject = new BehaviorSubject('');
+  readonly errorMsg = Error;
   constructor(private shareDataService: ShareDataService,
     private store: Store<AppState>) { }
 
-  // messageMatrixSubject = new BehaviorSubject('');
-  readonly errorMsg = Error;
-  requestCount = 0;
-
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-
-
     return next.handle(req).pipe(
-      map( event => {
-        // console.log(event);
-        return event;
-      }),
-      catchError( error => {
-        return throwError( error );
-      }),
-      finalize( () => {
-        // console.log('finalize');
+      tap(event => {
+        if (event.type === HttpEventType.Response) {
+          const statusMessage = event.body[0].statusMessage;
+          if (statusMessage) {
+            Object.keys(this.errorMsg)
+              .map((key) => {
+                if (key === statusMessage.msgCode) {
+                  const message = new Message(key, this.errorMsg[key], '');
+                  this.store.dispatch(msgActions.setMessage({ message }));
+
+                  statusMessage.description = this.errorMsg[key];
+                  this.shareDataService.messageMatrixSubject.next(statusMessage);
+                }
+              });
+          }
+        }
+        catchError(this.handleError);
       })
     );
   }

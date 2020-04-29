@@ -6,7 +6,7 @@
   <kendo-dialog title="Merchant Category Code (MCC) Finder" *ngIf="mcciDialogOpened" (close)="closeMcciBox()"
     [width]="820" [height]="634">
     <!-- Temporary sending hardcoded values for testing, later will bind with value from controller -->
-    <app-mcc-finder #mccFinder [b2bOption]=true [b2cOption]=false></app-mcc-finder>
+    <app-mcc-finder #mccFinder [b2bOption]=false [b2cOption]=false></app-mcc-finder>
   </kendo-dialog>
   
   

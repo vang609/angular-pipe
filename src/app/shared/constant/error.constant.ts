@@ -1,5 +1,4 @@
 export enum Error {
-    'MO-103' = 'Norecords found',
     'MO-201' = 'Please enter at least 3 chars or MCC Code',
     'MO-202' = 'Are you sure you want to close the MCC finder',
     'MO-801' = '503: Communication Error',

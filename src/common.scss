@@ -34,8 +34,9 @@ button {
     position: relative;
 }
 
-input[type=checkbox]:disabled{
+input:disabled {
     background-color: $tab-border-color;
+    cursor: no-drop;
 }
 
 // kendo panel bar 
@@ -533,6 +534,9 @@ body {
 .table-grid-detail {
     border: 1px solid #688FCF !important;
     border-left: 4px solid #688FCF !important;
+}
+.table-grid-detail .td-vtop{
+    vertical-align: top !important;
 }
 .k-grid .k-detail-row td{
     padding:5px 10px;
