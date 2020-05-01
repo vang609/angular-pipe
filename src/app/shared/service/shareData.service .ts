@@ -10,5 +10,6 @@ export class ShareDataService {
   constructor(private http: HttpClient) { }
 
   messageMatrixSubject: BehaviorSubject<any> = new BehaviorSubject(null);
+  loadingSubject: BehaviorSubject<boolean> = new BehaviorSubject(null);
 
 }

@@ -11,6 +11,7 @@ export class MccFinderService {
   constructor(private http: HttpClient) { }
 
   getMCCIData(query, code): Observable<any> {
+    console.log(query, code);
     return this.http.get('../../../assets/json/mcc-data1.json');
     // if (query && code) {
     //   return this.http.get(`${url.URL.MCCI_SRC}mccDescription=${query}&transProcType=${code}`);

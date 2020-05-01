@@ -1,6 +1,6 @@
 <div class="row">
     <div class="row">
-        <div class="row"><strong>Select Transaction Source Type</strong></div>
+        <div class="row"><strong>Select Transaction Source Type {{showLoader}}</strong></div>
         <div class="row row-margin">
             <div class="row-40 col-300" *ngFor="let c of sourceType; let i = index">
                 <label><input #chck type="checkbox" (click)="selectedSourceType(c.code, chck.checked)"
@@ -21,11 +21,12 @@
                         [(ngModel)]="srcString" 
                         placeholder="Search in all columns"
                         (search)="clearSearchText()"
-                        (ngModelChange)="valuechange()"
+                        (keyup) = "searchKeyup($event)"                      
                         (click)="inputErrorCheck(true)"
                         autofocus
                         tabindex="0"
                         autocomplete="off" />
+                        <!-- (ngModelChange)="valuechange($event)" -->
             <!--    <div class="tooltip" #tooltipTemp title="Please enter atleast 3 Characters or MCC Code"></div>
             -->
             <p *ngIf="srcString && srcString.length < 3 && srcString.length !== 0"
@@ -129,6 +130,7 @@
         <span><img src="assets/img/messaging-icon-alerts-32x32.png"></span>
         <p>Please check one of the Source Transaction Type to get the search bar enabled.</p>
         <button kendoButton (click)="inputErrorCheck(false)" class="btn-secondary">OK</button>
-    </div>
-    
+    </div>    
 </kendo-dialog>
+
+<div *ngIf="showLoader" class="k-i-loading"></div>

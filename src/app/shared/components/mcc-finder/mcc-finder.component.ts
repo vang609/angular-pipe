@@ -11,6 +11,7 @@ import {
   OnDestroy,
   ElementRef,
 } from '@angular/core';
+import { NgZone } from '@angular/core';
 
 // Services
 import { MccFinderService } from './mcc-finder.service';
@@ -57,7 +58,8 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
     private mccFinderService: MccFinderService,
     private notificationService: NotificationService,
     private store: Store<AppState>,
-    private shareDataService: ShareDataService
+    private shareDataService: ShareDataService,
+    private lc: NgZone
   ) { }
 
   message$: Subscription;
@@ -107,6 +109,10 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
   inputSrcBox: boolean;
   public rowExpand: boolean;
   showPagination = false;
+  timeout: any = null;
+  typingTimer;
+  doneTypingInterval = 1000;
+  showLoader = false;
 
   ngOnInit(): void {
     this.loading = false;
@@ -128,6 +134,10 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
           this.showNotification(message);
         }
       });
+
+    this.shareDataService.loadingSubject.subscribe((value) => {
+      this.showLoader = value;
+    });
   }
 
   inputErrorCheck(val) {
@@ -321,23 +331,49 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
     }
   }
 
-  valuechange() {
-    this.srcString = this.srcString.trim();
-    if (this.srcString.length > this.srcStringMinLength) {
-      this.inputSrcBox = false;
+  // valuechange() {
+  //   this.srcString = this.srcString.trim();
+  //   if (this.srcString.length > this.srcStringMinLength) {
+  //     this.inputSrcBox = false;
+  //     const code = this.sourceType.find((row) => row.checked)
+  //       ? this.sourceType.find((row) => row.checked).code
+  //       : null;
+  //     const searchQuery = Observable.create((observer) => {
+  //       observer.next(this.srcString);
+  //     });
+  //     searchQuery
+  //       .pipe(
+  //         debounceTime(1000),
+  //         distinctUntilChanged(),
+  //         switchMap((query) => this.mccFinderService.getMCCIData(query, code))
+  //       )
+  //       .subscribe((res) => {
+  //         this.mccData = [];
+  //         this.selectedRowData = this.selectedRowIndex = null;
+  //         this.querySearched = true;
+  //         if (res && res[0] && res[0].result && res[0].result.length > 0) {
+  //           this.mccData = res[0].result;
+  //           this.showPagination = this.mccData.length > 6 ? true : false;
+  //           this.loadItems();
+  //           this.store.dispatch(loadAction.stopLoading());
+  //         }
+  //       });
+  //   } else {
+  //     this.inputSrcBox = true;
+  //   }
+  // }
+
+  searchKeyup(event): void {
+    clearTimeout(this.typingTimer);
+    this.typingTimer = setTimeout(() => {
+      this.srcString = this.srcString.trim();
       const code = this.sourceType.find((row) => row.checked)
         ? this.sourceType.find((row) => row.checked).code
         : null;
-      const searchQuery = Observable.create((observer) => {
-        observer.next(this.srcString);
-      });
-      searchQuery
-        .pipe(
-          debounceTime(1000),
-          distinctUntilChanged(),
-          switchMap((query) => this.mccFinderService.getMCCIData(query, code))
-        )
+      this.shareDataService.loadingSubject.next(true);
+      this.mccFinderService.getMCCIData(this.srcString, code)
         .subscribe((res) => {
+          this.shareDataService.loadingSubject.next(false);
           this.mccData = [];
           this.selectedRowData = this.selectedRowIndex = null;
           this.querySearched = true;
@@ -348,9 +384,7 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
             this.store.dispatch(loadAction.stopLoading());
           }
         });
-    } else {
-      this.inputSrcBox = true;
-    }
+    }, this.doneTypingInterval);
   }
 
   // Clear text in input box

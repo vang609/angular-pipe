@@ -32,6 +32,7 @@ export class HttpInterceptorService implements HttpInterceptor {
     return next.handle(request).pipe(
       map((event: HttpEvent<any>) => {
         if (event instanceof HttpResponse) {
+          // this.shareDataService.loadingSubject.next(false);
           const statusMessage = event.body[0].statusMessage;
           // console.log('=========')
           Object.keys(this.errorMsg).map((key) => {
