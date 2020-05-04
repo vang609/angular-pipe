@@ -1,0 +1,163 @@
+<!-- <div class="row">
+    <span>MCC Finder</span>
+    <button type="button" kendoButton (click)="openMcciBox()" [look]="'flat'" [icon]="'search'"></button>
+  </div> -->
+  
+  <kendo-dialog title="Merchant Category Code (MCC) Finder" *ngIf="mcciDialogOpened" (close)="closeMcciBox()"
+    [width]="820" [height]="634">
+    <!-- Temporary sending hardcoded values for testing, later will bind with value from controller -->
+    <app-mcc-finder #mccFinder [b2bOption]=false [b2cOption]=false></app-mcc-finder>
+  </kendo-dialog>
+  
+  
+  <kendo-dialog title='' [width]="'100%'" [height]="84" *ngIf="closeMCCfinder" [minWidth]="150" [minHeight]="50"
+    [width]="150" class="message-dialog-container">
+    <div class="message-dialog">
+      <span class="k-icon k-i-info" ng-reflect-klass="k-icon" ng-reflect-ng-class="k-i-info"></span>
+      <p>Are you sure you want to close MCC Finder?</p>
+      <button kendoButton (click)="closeDialogAction('ok')" class="btn-secondary">OK</button>
+      <button kendoButton (click)="closeDialogAction('cancel')" class="btn-secondary">Cancel</button>
+    </div>
+  </kendo-dialog>
+
+  <form>
+    
+    <div class="row form-row">
+      
+        <div class="row">
+      <div class="col-5 no-pad">
+        <label for="sourcetypesb2c" class="row form-row">% Business to Consumer (B2C)</label>
+        <div class="row">
+          <kendo-numerictextbox
+            [value]="value" [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+        </kendo-numerictextbox>
+        </div>
+        
+      </div>
+      <div class="col-5 no-pad">
+        <label class="sourcetypesb2b" class="row form-row">% Business to Business (B2B)</label>
+        <div class="row">
+          <kendo-numerictextbox
+            [value]="value" [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+        </kendo-numerictextbox>
+        </div>
+       
+      </div>
+    </div>
+    </div>
+         
+    <div class="row form-row">
+     <div class="row">
+      
+     <label for="MCC Tax ID" class="row form-row">Merchant Catalog Code (MCC) </label>
+     <input type="text" placeholder="Please enter MCC Code" id="MCCTaxId" kendoTextBox  />&nbsp;
+    <span class="ico-mcc-merchant"><img src="assets/img/binoculars.png" title="Search MCC Code" (click)="openMcciBox()"></span>
+    <!-- <button type="button" kendoButton (click)="openMcciBox()" [look]="'flat'" [icon]="'search'"></button> -->
+    
+     </div>
+    </div>
+    <code>-------------------------------------------------------------</code>
+    
+
+    <div class="row">
+      <div class="col-5 no-pad">
+        <label class="row form-row">Average Ticket (in USD)</label>
+        <div class="row">
+          <kendo-numerictextbox
+            [value]="value" [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+        </kendo-numerictextbox>
+        </div>
+        
+      </div>
+      
+    </div>
+
+     <div class="row">
+      <div class="col-5 no-pad">
+        <label class="row form-row">% Card Present (CP)</label>
+        <div class="row">
+          <kendo-numerictextbox
+            [value]="value" [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+        </kendo-numerictextbox>
+        </div>
+        
+      </div>
+      <div class="col-5 no-pad">
+        <label class="row form-row">% Card Not Present (CNP)</label>
+        <div class="row">
+          <kendo-numerictextbox
+            [value]="value" [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+        </kendo-numerictextbox>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-5 no-pad">
+        <label class="row form-row">Processing Type</label>
+        <div class="row">
+          <kendo-dropdownlist
+        [defaultItem]="processingType"
+        [data]="processingTypes"
+        [textField]="'text'"
+        [valueField]="'value'"
+    >
+    </kendo-dropdownlist>
+        </div>
+      </div>
+      <div class="col-5 no-pad">
+        <label class="row form-row">Processing Option</label>
+        <div class="row">
+          <kendo-dropdownlist
+          [defaultItem]="processingOption"
+          [data]="processingOptions"
+          [textField]="'text'"
+          [valueField]="'value'"
+      >
+      </kendo-dropdownlist>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-5 no-pad">
+        <label class="row form-row">Communication Method</label>
+        <div class="row">
+          <input type="radio" name="foo" value="one" [(ngModel)]="model.foo" kendoRadioButton /> Dial (A)
+        </div>
+        <div class="row">
+          <input type="radio" name="foo" value="two" [(ngModel)]="model.foo" kendoRadioButton /> Frame Relay (C)
+        </div>
+        <div class="row">
+          <input type="radio" name="foo" value="three" [(ngModel)]="model.foo" kendoRadioButton /> Frame/Internet (M)
+        </div>
+        <div class="row">
+          <input type="radio" name="foo" value="two" [(ngModel)]="model.foo" kendoRadioButton /> Datawire (IPN)
+        </div>
+        <div class="row">
+          <input type="radio" name="foo" value="three" [(ngModel)]="model.foo" kendoRadioButton /> Lease (M)
+        </div>
+        </div>
+        
+      </div>
+
+      <code>-------------------------------------------------------------</code>
+
+      <div class="row">
+        <div class="col-5 no-pad">
+          <label class="row form-row">Total Estimate Annual Volume</label>
+         
+          
+        </div>
+        <div class="col-5">
+          <label class="row form-row">{{totalEstimatedValue}}</label>
+          
+          
+        </div>
+      </div>
+
+
+
+
+</form> 
