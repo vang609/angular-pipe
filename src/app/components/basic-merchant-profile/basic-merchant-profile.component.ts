@@ -1,5 +1,5 @@
 import { StateService } from './../../shared/service/state.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-basic-merchant-profile',
@@ -8,29 +8,52 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicMerchantProfileComponent implements OnInit {
   state = [];
-  public contactVal: string = "9803371148";
-  public zipVal: string = "28262";
-  public contactMask: string = "(999) 000-00-00";
-  public ZipMask: string = "00000";
+  public contactVal: string;
+  public zipVal: string;
+  public contactMask: string;
+  public ZipMask: string;
   public mcciDialogOpened = false;
 
-  ptitle = "Product Type";
-  psubtitle = "Product Listing";
-  pcount = 8;
-  pprice = "$ XXX.XX";
+  ptitle: string;
+  psubtitle: string;
+  pcount: number;
+  pprice: string;
   public isDisabled = true;
+  isWFcustomer: boolean;
+  @ViewChild('ssnInput') ssnInput;
+  @ViewChild('tinInput') tinInput;
   constructor(private stateService: StateService) { }
-  
 
   ngOnInit(): void {
+    this.isWFcustomer = true;
+    this.ptitle = 'Product Type';
+    this.psubtitle = 'Product Listing';
+    this.pcount = 8;
+    this.pprice = '$ XXX.XX';
+    this.isDisabled = true;
+    this.contactVal = '9803371148';
+    this.zipVal = '28262';
+    this.contactMask = '(999) 000-00-00';
+    this.ZipMask = '00000';
     this.getState();
+    setTimeout(() => {
+      if (this.ssnInput) { this.ssnInput.input.nativeElement.placeholder = 'Please enter SSN Number'; }
+      if (this.tinInput) { this.tinInput.input.nativeElement.placeholder = 'Please enter TIN Number'; }
+    });
   }
 
-  getState(){
-    this.stateService.getState().subscribe(s => s.forEach(element => {
-      this.state.push(element.name);
-    }));
-    console.log(this.state);
+  getState() {
+    this.stateService.getState().subscribe(s =>
+      console.log(s)
+      //   s.forEach(element => {
+      //   this.state.push(element.name);
+      // })
+    );
+    // console.log(this.state);
+  }
+
+  isWFcustomerFunc(val) {
+    this.isWFcustomer = val;
   }
 
 }

@@ -12,8 +12,12 @@ $input-error-color: #D71E28;
 $border-color: #B5ADAD;
 $white-color:#ffffff;
 $input-color:#141414;
-$lable-color:#3B3331;
+$label-color:#3B3331;
 $title-color:#434343;
+$container-width: 1106px;
+$background-grey: #f9f7ff;
+$inputset-height:39px;
+$tab-content-height: 590px;
 
 // column function
 @mixin column($width) {
@@ -34,14 +38,33 @@ $title-color:#434343;
     float: left;
 }
 
+.center-align {
+    text-align: center;
+}
+
 input,
 button {
     position: relative;
 }
 
 input:disabled {
-    background-color: $tab-border-color;
+    background-color: $white-color;
     cursor: no-drop;
+}
+
+.k-combobox {
+    width: 100%;
+
+    .k-dropdown-wrap {
+        border-color: #B5ADAD !important;
+        height: 42px;
+
+        .k-input {
+            padding: 8px 4px;
+            line-height: 1.4285714286;
+            margin: 6px 0;
+        }
+    }
 }
 
 // kendo panel bar 
@@ -54,35 +77,120 @@ input:disabled {
         padding: 15px;
     }
 }
-.header-row{
-    padding-top:6px;
-    padding-bottom: 13px;
+
+.header-row {
+    clear: both;
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    height: 68px !important;
+    overflow: hidden !important;
 
     .row-heading {
         font-size: 24px;
         float: left;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: normal;
-        color:$title-color;
-        padding:0;
-        margin:0;
+        color: $title-color;
+        padding: 0;
+        margin: 0;
     }
-    .status-bar{
-        background-color:#E3DEDE;
-        padding:6px 12px;
-        font-size:12px;
-        color: $lable-color;
+
+    .status-bar {
+        background-color: #E3DEDE;
+        padding: 6px 12px;
+        font-size: 12px;
+        color: $label-color;
         float: left;
-        margin-left:20px;
-    
-        .status-clear{
-            color:$green-color;
+        margin-left: 20px;
+        margin-top: 4px;
+
+        .status-clear {
+            color: $green-color;
             text-transform: uppercase;
-            font-weight:bold;
+            font-weight: bold;
         }
     }
-    
+
 }
+
+.container-tabstrip {
+    // width: $container-width;
+    width: 100%;
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+
+    .k-tabstrip-items {
+        border: 0 !important;
+        background-color: $background-grey;
+        position: relative;
+        width: inherit;
+        height: 45px;
+        box-sizing: border-box;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 46px;
+            background-color: #f9f7ff;
+            position: fixed;
+            margin-left: -200px;
+            margin-top: 0px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 20%;
+            height: 46px;
+            background-color: $background-grey;
+            position: fixed;
+            right: 0;
+            margin-top: 0px;
+            float: right;
+        }
+
+        .k-item {
+            border: 0 !important;
+            border-bottom: 3px solid $background-grey !important;
+            color: $input-color;
+            margin-right: 20px;
+        }
+
+        .k-item.k-state-active {
+            font-weight: bold;
+            border-color: $yellow-color !important;
+            background-color: $background-grey;
+        }
+
+    }
+
+    .k-content {
+        border: 0 !important;
+        // width: $container-width;
+        width: 100%;
+        margin: auto;
+        border: 0 !important;
+        // padding: 15px 30px;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+
+.container-width {
+    width: $container-width;
+}
+
+.k-tabstrip>.k-content {
+    padding: 0 !important;
+}
+
 .row {
     clear: both;
     display: block;
@@ -105,6 +213,10 @@ label.form-row {
     margin-bottom: 5px;
 }
 
+.mar-left-1{
+    margin-left: 1% !important;
+}
+
 .col-1 {
     @include column(10%)
 }
@@ -112,7 +224,12 @@ label.form-row {
 .col-2 {
     @include column(20%)
 }
-
+.col-2-3 {
+    @include column(23%)
+}
+.col-2-4 {
+    @include column(24%)
+}
 .col-2-5 {
     @include column(25%)
 }
@@ -169,6 +286,10 @@ label.form-row {
     @include row-width(40%)
 }
 
+.row-45 {
+    @include row-width(45%)
+}
+
 .row-50 {
     @include row-width(50%)
 }
@@ -200,12 +321,15 @@ label.form-row {
 .col-300 {
     width: 300px;
 }
-.col-33{
-    width:33.3%;
+
+.col-33 {
+    width: 33.3%;
 }
+
 .no-pad {
-    padding: 0
+    padding: 0 !important;
 }
+
 .left-pad {
     padding-left: 0 !important
 }
@@ -222,13 +346,17 @@ label.form-row {
     padding-bottom: 0 !important
 }
 
+.right-pad-15 {
+    padding-right: 15px !important
+}
+
 .step-row {
     margin-bottom: 18px;
     height: 35px;
 }
 
 .selected-step-row {
-    height: 60px;
+    height: 62px;
     overflow: hidden;
 }
 
@@ -241,26 +369,26 @@ label.form-row {
     border-color: $green-color !important;
     background-color: $green-color !important;
     color: $green-color !important;
-}
 
-.prev-step-btn .step-btn::after {
-    border: 1px solid $green-color !important;
-    background: $green-color !important;
-}
+    &::after {
+        border: 1px solid $green-color !important;
+        background: $green-color !important;
+    }
 
-.prev-step-btn .step-btn::before {
-    position: absolute;
-    margin-top: -1px;
-    margin-left: 9px;
-    float: left;
-    background: transparent;
-    content: "";
-    display: block;
-    width: 7px;
-    height: 13px;
-    border: solid $white-color;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+    &::before {
+        position: absolute;
+        margin-top: -1px;
+        margin-left: 9px;
+        float: left;
+        background: transparent;
+        content: "";
+        display: block;
+        width: 7px;
+        height: 13px;
+        border: solid $white-color;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
 }
 
 .step-row:last-child {
@@ -274,32 +402,33 @@ label.form-row {
     display: block;
     background: $white-color;
     color: #898989;
-    padding-top: 5px;
+    padding-top: 3px;
     box-sizing: border-box;
     cursor: pointer;
     float: left;
     border-radius: 50px;
     border: 2px solid #898989;
-}
 
-.step-btn::after {
-    position: absolute;
-    width: 0px;
-    height: 21px;
-    border: 1px solid #898989;
-    content: "";
-    margin-top: 23px;
-    margin-left: -5px;
-    float: left;
-    background: #898989;
+    &::after {
+        position: absolute;
+        width: 0px;
+        height: 21px;
+        border: 1px solid #898989;
+        content: "";
+        margin-top: 25px;
+        margin-left: -5px;
+        float: left;
+        background: #898989;
+    }
 }
 
 .selected-step-row .step-btn::after {
-    height: 46px;
+    height: 48px;
 }
 
 .selected-step-row .step-desc {
     font-weight: bold;
+    font-size: 14px;
 }
 
 .selected-step-row .step-desc span {
@@ -315,21 +444,24 @@ label.form-row {
     background: none;
 }
 
+
 .step-desc {
     display: block;
     box-sizing: border-box;
     padding-left: 0px;
-    float: right;
-    width: 80%;
+    float: left;
+    width: 82%;
     padding-top: 5px;
     font-size: 15px;
+    margin-left: 10px;
+    color: $input-color;
 
     span {
         clear: both;
         display: block;
         font-size: 12px;
-        color: #cccccc;
-        padding-top: 5px;
+        color: $input-color;
+        padding-top: 2px;
     }
 }
 
@@ -382,15 +514,50 @@ html,
 body {
     font-family: Verdana;
     font-size: 13px;
-    color: $lable-color;
+    color: $label-color;
 }
 
 /*----------------------Input Class Start--------------------------*/
-.ico-mcc{
-    padding:0 15px 0 0;
+.ico-mcc {
+    padding: 0 15px 0 0;
 }
-.k-window-title::before{
-    background-image: url(/assets/img/binoculars.png);
+
+.icon-address {
+    background-image: url(src/assets/img/ico-address.png), url(src/assets/img/ico-lock.png);
+    background-position: left, right;
+    background-repeat: no-repeat, no-repeat;
+    padding-left: 28px;
+}
+
+.icon-lock {
+    background-image: url(src/assets/img/ico-lock.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.icon-phone {
+    background-image: url(src/assets/img/ico-phone.png), url(src/assets/img/ico-lock.png);
+    background-position: left, right;
+    background-repeat: no-repeat, no-repeat;
+    padding-left: 28px;
+}
+
+.icon-email {
+    background-image: url(src/assets/img/ico-email.png), url(src/assets/img/ico-lock.png);
+    background-position: left, right;
+    background-repeat: no-repeat, no-repeat;
+    padding-left: 28px;
+}
+
+.icon-contact {
+    background-image: url(src/assets/img/ico-contact-name.png), url(src/assets/img/ico-lock.png);
+    background-position: left, right;
+    background-repeat: no-repeat, no-repeat;
+    padding-left: 28px;
+}
+
+.k-window-title::before {
+    background-image: url(/assets/img/binoculars.png) left no-repeat;
     width: 31px;
     height: 18px;
     display: inline-block;
@@ -398,6 +565,7 @@ body {
     margin-left: -36px;
     margin-top: 5px;
 }
+
 .k-checkbox {
     width: 24px;
     height: 24px;
@@ -442,10 +610,18 @@ body {
     box-shadow: 0 0 0 1px rgba(104, 143, 207, 0.39);
 }
 
+// .k-textbox {
+//     height: calc(1.4285714286em + 22px);
+
+// }
+
 .k-textbox {
-    height: calc(1.4285714286em + 22px);
+    height: $inputset-height !important;
+    border-color: $border-color !important;
+    color: $input-color !important;
     border-radius: 2px;
     margin-bottom: 7px;
+    font-size: 1.04rem;
 }
 
 .k-radio {
@@ -466,32 +642,102 @@ body {
 .k-grid .k-state-selected {
     background-color: rgba(235, 235, 235, 0.2) !important;
 }
-.input-txt-100w{
-    width:100%;
+
+.input-txt-100w {
+    width: 100%;
 }
-.input-txt-50w{
-    width:50%;
-    height:39px;
+
+.input-txt-50w {
+    width: 50%;
+    height: $inputset-height;
 }
-.input-txt-92w{
-    width:92%;
+
+.input-txt-92w {
+    width: 92%;
 }
-.input-holder-100w{
-    width:100%;
+
+.input-txt-85w {
+    width: 85% !important;
 }
-.input-holder-50w{
-    width:14.6em;
+
+.input-holder-100w {
+    width: 100%;
 }
-.input-holder-50w .k-textbox{
+
+.input-holder-50w {
+    width: 14.6em;
+}
+
+.input-holder-50w .k-textbox {
     height: 42px;
     border: 1px solid $border-color;
-    width:100% !important;
-    
+    width: 100% !important;
+
 }
-.input-holder-50w .k-textbox:focus{
+
+.input-holder-50w .k-textbox:focus {
     border-color: #688FCF;
     color: #656565;
     box-shadow: 1px 1px 4px 0px rgba(104, 143, 207, 1.00);
+}
+
+.k-numerictextbox {
+    width: 100% !important;
+    height: $inputset-height;
+}
+
+.k-numerictextbox .k-numeric-wrap .k-input {
+    height: calc(13px + 1.4285714286em) !important;
+}
+
+.k-numerictextbox .k-numeric-wrap .k-link-increase .k-icon {
+    bottom: 5px !important;
+}
+
+.k-numerictextbox .k-numeric-wrap .k-select {
+    background: none !important;
+
+    .k-i-arrow-s::before {
+        content: "\2212" !important;
+        font-size: 19px;
+    }
+
+    .k-i-arrow-n::before {
+        content: "\2b" !important;
+        font-size: 19px;
+    }
+}
+
+.k-dropdown {
+    width: 100% !important;
+}
+
+.k-dropdown .k-dropdown-wrap .k-input {
+    height: calc(15px + 1.4285714286em) !important;
+}
+
+.table-textbox {
+    border: 1px solid $border-color;
+    border-bottom: 0;
+    padding: 0;
+    font-size: 12px;
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table-textbox td {
+    border-right: 1px solid $border-color;
+    padding-left: 5px;
+    border-bottom: 1px solid $border-color;
+}
+
+.table-textbox td:nth-child(1) {
+    width: 40%;
+    padding-left: 5px;
+}
+
+.table-textbox td .k-numerictextbox {
+    border: none;
 }
 
 /*----------------------Grid Class Start--------------------------*/
@@ -502,6 +748,7 @@ body {
     padding: 30px 30px 6px 30px;
     border-radius: 10px;
 }
+
 .k-dialog-wrapper .k-dialog {
     position: relative;
     border-radius: 10px;
@@ -521,7 +768,7 @@ body {
     font-size: 28px;
     font-family: Georgia Bold;
     font-weight: bold;
-    padding-left:37px;
+    padding-left: 37px;
 }
 
 .k-grid-header .k-header {
@@ -579,23 +826,28 @@ body {
     border: 1px solid #688FCF !important;
     border-left: 4px solid #688FCF !important;
 }
-.table-grid-detail .td-vtop{
+
+.table-grid-detail .td-vtop {
     vertical-align: top !important;
 }
-.k-grid .k-detail-row td{
-    padding:5px 10px;
-}
-.k-grid .k-detail-row .similar-merchant-table{
-    vertical-align: top;
-}
-.k-grid .k-detail-row .similar-merchant-table table{
-    min-height:47px;
+
+.k-grid .k-detail-row td {
+    padding: 5px 10px;
 }
 
-.grid-btn{
-    margin-top:-43px;
+.k-grid .k-detail-row .similar-merchant-table {
+    vertical-align: top;
+}
+
+.k-grid .k-detail-row .similar-merchant-table table {
+    min-height: 47px;
+}
+
+.grid-btn {
+    margin-top: -43px;
     margin-right: 7px;
 }
+
 /*----------------------Grid Pager Class Start--------------------------*/
 
 .k-grid-pager {
@@ -635,7 +887,7 @@ body {
 .btn-primary {
     width: 176px;
     background-color: #D71E28;
-    color:$white-color;
+    color: $white-color;
     font-size: 16px;
     border: none;
     padding: 10px 0;
@@ -683,7 +935,7 @@ kendo-dialog.message-dialog-container {
     padding: 17px;
     border: 2px solid #5A569B;
     overflow: auto;
-    display:flex;
+    display: flex;
 
     p {
         float: left;
@@ -713,10 +965,10 @@ kendo-dialog.message-dialog-container {
     padding: 17px;
     border: 2px solid #C12B0B;
     overflow: auto;
-    display:flex;
+    display: flex;
     border-radius: 2px;
-    box-shadow: rgba(193,43,11,0.39);
-    
+    box-shadow: rgba(193, 43, 11, 0.39);
+
     p {
         float: left;
         font-size: 14px;
@@ -725,8 +977,8 @@ kendo-dialog.message-dialog-container {
         padding-left: 16px;
         display: block;
         color: #3B3331;
-        margin:0;
-        margin-top:0;
+        margin: 0;
+        margin-top: 0;
     }
 
     .k-i-error {
@@ -783,36 +1035,37 @@ kendo-dialog.message-dialog-container {
 .tooltip {
     left: 0;
 }
-.error-message{
+
+.error-message {
     background-color: #F7D2D4;
     color: $input-color;
     font-size: 13px;
     padding: 14px;
     position: absolute;
-    width:487px;
-    display:block;
-    margin-top:9px;
+    width: 487px;
+    display: block;
+    margin-top: 9px;
     z-index: 1;
-    display:flex;
+    display: flex;
     align-items: center;
 
-    span{
-        padding-right:10px;
+    span {
+        padding-right: 10px;
     }
 }
 
 .error-message::before {
     content: '';
     position: absolute;
-    display: block;    
-    width: 0px;        
+    display: block;
+    width: 0px;
     left: 6%;
     top: 6PX;
     border: 15px solid transparent;
     border-top: 0;
     border-bottom: 15px solid #F7D2D4;
     transform: translate(-50%, calc(-100% - 5px));
-  }
+}
 
 /// Placeholder
 ::-webkit-input-placeholder {
@@ -826,6 +1079,7 @@ kendo-dialog.message-dialog-container {
 ::-moz-placeholder {
     color: #777676 !important;
 }
+
 /// Placeholder end
 
 // Loader
@@ -836,57 +1090,107 @@ kendo-dialog.message-dialog-container {
     right: 0;
     bottom: 0;
     font-size: 64px;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255, 255, 255, .3);
     color: #ff6757;
-  }
+}
 
-  // Loader
+// Loader
 
 /*----------------------Desktop template Start--------------------------*/
-.main-container-holder{
-    display: flex;
-}
-.main-container-holder .stepper-col, .main-container-holder .form-col, .main-container-holder .right-col{
-    display: flow-root;
+//.main-container-holder {
+// display: flex;
+//}
+
+//.main-container-holder .stepper-col,
+//.main-container-holder .form-col,
+//.main-container-holder .right-col {
+//   display: flow-root;
+//}
+
+.main-container .col-2-5 {
+    padding-top: 0;
 }
 
-.main-container .col-2-5{
-    padding-top:0;
+.main-container-holder .col-10 {
+    padding: 10px;
 }
-.main-container .col-5{
-    width:46%;
-    padding:10px;
+
+// .main-container .col-5 {
+//     width: 46%;
+// }
+
+.main-container-holder .stepper-col {
+    padding-right: 0;
+    height: 100% !important;
+    overflow: hidden;
 }
-.main-container .stepper-col{
-    margin-top:-10px;
-}
-.main-container .form-col{
-    border:1px solid $border-color;
-    border-radius: 4px;
-    margin-right:21px;
-    margin-left:21px;
-}
-.main-container .right-col{
-    background-color:#F4F0ED;
+
+.main-container .form-col {
+    border: 1px solid $border-color;
     border-radius: 4px;
 }
-.main-container label.form-row{
-    font-weight: bold; 
-    color:$lable-color;   
+
+.main-container .right-col {
+    background-color: #F4F0ED;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 100%;
 }
-.mainlable{
-    font-size:14px;
+
+label.form-row {
     font-weight: bold;
-    color:$lable-color;
+    color: $label-color;
 }
-.hr-line{
-    border:0px; 
-    border-bottom: 1px dashed #979797;
-    margin-top:15px;
-}
-/*----------------------Desktop template End--------------------------*/
 
- 
+label {
+    font-weight: bold;
+    font-size: 12px;
+    color: $label-color;
+    margin-bottom: 5px;
+}
+
+.lable-normal {
+    font-weight: normal;
+}
+
+.mainlable {
+    font-size: 14px;
+    font-weight: bold;
+    color: $label-color;
+}
+
+.hr-line {
+    border: 0px;
+    border-bottom: 1px dashed #979797;
+    margin-top: 15px;
+}
+
+/*----------------------Desktop template End--------------------------*/
+/*----------------------Custom scroll css-----------------------------*/
+
+.custom-scroll {
+    min-height: 500px;
+    overflow-y: scroll;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+
 /*----------------------------------------------- Media Class -----------------------------------------*/
 /*----------------------Max width 1024 --------------------------*/
 
@@ -896,24 +1200,53 @@ kendo-dialog.message-dialog-container {
         font-size: 25px;
         white-space: break-spaces;
     }
-    .input-txt{
-        width:100% !important;
+
+    .input-txt {
+        width: 100% !important;
     }
+
     .bottom {
         width: 100% !important;
-     }
-  }
+    }
+}
+
 /*----------------------Max width 767 --------------------------*/
 @media screen and (max-width: 766px) {
     .col-300 {
         width: 100%;
         padding-bottom: 10px;
     }
+
     .k-dialog {
         width: 96% !important;
     }
+
     .k-window-title {
         font-size: 20px;
     }
 }
 
+/* ------ Scrollbar css ------ */
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .2);
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 50px;
+}

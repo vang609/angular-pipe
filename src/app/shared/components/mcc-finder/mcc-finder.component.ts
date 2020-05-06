@@ -1,4 +1,3 @@
-import { GridResponse, SourceType } from './mcc-finder.model';
 // Angular Core
 import {
   Component,
@@ -45,6 +44,7 @@ import * as loadAction from '../../../root-store/actions/loading.actions';
 
 //  Models
 import { Message } from '../../models/message.model';
+import { GridResponse, SourceType } from './mcc-finder.model';
 
 @Component({
   selector: 'app-mcc-finder',
@@ -113,6 +113,7 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
   typingTimer;
   doneTypingInterval = 1000;
   showLoader = false;
+  searchOnce = true;
 
   ngOnInit(): void {
     this.loading = false;
@@ -206,7 +207,7 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   okButton(): void {
-    console.log('Ok Press');
+
   }
 
   // Change state of selected row
@@ -367,24 +368,46 @@ export class MccFinderComponent implements OnInit, OnChanges, OnDestroy {
     clearTimeout(this.typingTimer);
     this.typingTimer = setTimeout(() => {
       this.srcString = this.srcString.trim();
-      const code = this.sourceType.find((row) => row.checked)
-        ? this.sourceType.find((row) => row.checked).code
-        : null;
-      this.shareDataService.loadingSubject.next(true);
-      this.mccFinderService.getMCCIData(this.srcString, code)
-        .subscribe((res) => {
-          this.shareDataService.loadingSubject.next(false);
-          this.mccData = [];
-          this.selectedRowData = this.selectedRowIndex = null;
-          this.querySearched = true;
-          if (res && res[0] && res[0].result && res[0].result.length > 0) {
-            this.mccData = res[0].result;
-            this.showPagination = this.mccData.length > 6 ? true : false;
-            this.loadItems();
-            this.store.dispatch(loadAction.stopLoading());
-          }
-        });
+      if (this.srcString.length >= 3) {
+        this.shareDataService.loadingSubject.next(true);
+        this.fetchResult();
+      }
     }, this.doneTypingInterval);
+
+    // The below code will run once, so as to get
+    // user feel that data is getting fetched. We can remove below 'if' condition
+    // if not required while real testing
+    if (this.searchOnce) {
+      this.srcString = this.srcString.trim();
+      if (this.srcString.length === 3) {
+        this.searchOnce = false;
+        this.fetchResult();
+      }
+    }
+  }
+
+  getCode(): string {
+    const code = this.sourceType.find((row) => row.checked)
+      ? this.sourceType.find((row) => row.checked).code
+      : null;
+    return code;
+  }
+
+  fetchResult(): void {
+    const code = this.getCode();
+    this.mccFinderService.getMCCIData(this.srcString, code)
+      .subscribe((res) => {
+        this.shareDataService.loadingSubject.next(false);
+        this.mccData = [];
+        this.selectedRowData = this.selectedRowIndex = null;
+        this.querySearched = true;
+        if (res && res[0] && res[0].result && res[0].result.length > 0) {
+          this.mccData = res[0].result;
+          this.showPagination = this.mccData.length > 6 ? true : false;
+          this.loadItems();
+          this.store.dispatch(loadAction.stopLoading());
+        }
+      });
   }
 
   // Clear text in input box

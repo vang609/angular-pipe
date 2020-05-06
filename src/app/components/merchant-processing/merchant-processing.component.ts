@@ -10,9 +10,15 @@ export class MerchantProcessingComponent implements OnInit {
 
 value = 0.00;
 autoCorrect = false;
+isActive = true;
+mccfindercontent: string;
+mccFinderContentStr: string;
+
 public model = {
-  foo: 'two'
+  comnmethod: 'one',
+  location: 'locationY'
 };
+
 
 totalEstimatedValue = '$ X,XXX.XX';
 
@@ -43,6 +49,17 @@ public processingOption: { text: string, value: number } = { text: 'Select Proce
   ngOnInit(): void {
     this.mcciDialogOpened = false;
     this.closeMCCfinder = false;
+  }
+
+  mccFinderCode($event){
+    console.log('Search MCC Finder');
+  }
+
+  saveProcessing($event){
+    this.mccFinderContentStr.trim();
+    if ( this.mccFinderContentStr.length > 0) {
+        this.isActive = false;
+    }
   }
 
   openMcciBox() {

@@ -1,6 +1,6 @@
 @import '../../../common.scss';
 
-.container{
+.container {
     display: block;
     width: $outlet-width;
     height: 100%;
@@ -9,19 +9,26 @@
     margin: 0 auto;
     box-sizing: border-box;
 
-    .save-continue{
+    .save-continue {
         float: right;
         margin-left: 10px;
     }
 
-    .cancel{
+    .cancel {
         float: right;
         margin-left: 10px;
         background-color: $tab-content-background;
         border-color: $tab-content-background;
-        color: #000000;
+        color: $label-color;
         background-image: none;
         text-decoration: underline;
         width: 100px;
     }
+}
+
+.divider-label {
+    text-align: center;
+    line-height: 36px;
+    font-weight: bold;
+    color: $label-color;
 }

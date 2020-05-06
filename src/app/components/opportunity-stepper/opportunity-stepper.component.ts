@@ -1,5 +1,7 @@
+import * as stepper from './../../shared/constant/stepper.constant';
 import { Component, OnInit, Input, Output, EventEmitter, OnChanges } from '@angular/core';
 import { StateService } from '../../shared/service/state.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-opportunity-stepper',
@@ -9,7 +11,7 @@ import { StateService } from '../../shared/service/state.service';
 export class OpportunityStepperComponent implements OnInit, OnChanges {
 
   @Input() currentStep: number;
-  @Output() selectedStepNumber = new EventEmitter<string>();
+  @Output() selectedStepEvent = new EventEmitter();
   steps: any = [];
   selectedStep;
   state = [];
@@ -25,7 +27,6 @@ export class OpportunityStepperComponent implements OnInit, OnChanges {
   pprice = '$ XXX.XX';
   public isDisabled = true;
 
-  constructor(private stateService: StateService) { }
   public defaultItem: { text: string, value: number } = { text: 'All', value: null };
 
   public listItems: Array<{ text: string, value: number }> = [
@@ -35,6 +36,9 @@ export class OpportunityStepperComponent implements OnInit, OnChanges {
     { text: 'Clover Station', value: 4 },
     { text: 'FD130', value: 5 }
   ];
+
+  constructor(private stateService: StateService,
+    private router: Router) { }
 
   ngOnChanges() {
     this.currentStep = 1;
@@ -50,24 +54,13 @@ export class OpportunityStepperComponent implements OnInit, OnChanges {
     this.stateService.getState().subscribe(s => s.forEach(element => {
       this.state.push(element.name);
     }));
-    this.steps = [
-      { name: 1, head: 'Basic Merchant Profile', desc: 'Who is Merchant? Their Name & Address', formValid: false, activateStep: true },
-      {
-        name: 2, head: 'Processing Profile', desc: 'Information about business type & Processing Type ', formValid: false,
-        activateStep: true
-      },
-      { name: 3, head: 'Annual Volume', desc: 'Information regarding estimated annual Volume', formValid: false, activateStep: true },
-      { name: 4, head: 'Account Features', desc: 'Lorem ipsum dolor sit amet, consectetur', formValid: false, activateStep: true },
-      { name: 5, head: 'Equipment', desc: 'Lorem ipsum dolor sit amet, consectetur', formValid: false, activateStep: true },
-      { name: 6, head: 'Pricing', desc: 'Lorem ipsum dolor sit amet, consectetur', formValid: false, activateStep: true },
-      { name: 7, head: 'Summary', desc: 'Lorem ipsum dolor sit amet, consectetur', formValid: false, activateStep: true },
-      { name: 8, head: 'Proposal Document Page', desc: 'Lorem ipsum dolor sit amet, consectetur', formValid: false, activateStep: true }
-    ];
+    this.steps = stepper.stepperSteps;
   }
 
-  stepClck(row) {
-    this.selectedStep = row;
-    this.selectedStepNumber.next(row);
+  stepClick(row): void {
+    this.selectedStep = row.name;
+    this.selectedStepEvent.next(row);
+    this.router.navigate(['/opportunity', { outlets: { form: row.routeName } }], { skipLocationChange: true });
   }
 
   openMcciBox() {

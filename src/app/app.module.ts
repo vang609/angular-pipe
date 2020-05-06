@@ -21,12 +21,13 @@ import { GridModule } from '@progress/kendo-angular-grid';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NotificationModule } from '@progress/kendo-angular-notification';
 import { TooltipModule } from '@progress/kendo-angular-tooltip';
+import { LayoutModule } from '@progress/kendo-angular-layout';
 import { OpportunityComponent } from './oppurtunity/opportunity.component';
 import { OpportunityStepperComponent } from './components/opportunity-stepper/opportunity-stepper.component';
-import { OpportunityFormComponent } from './components/opportunity-form/opportunity-form.component';
 import { OpportunityHelperComponent } from './components/opportunity-helper/opportunity-helper.component';
 import { BasicMerchantProfileComponent } from './components/basic-merchant-profile/basic-merchant-profile.component';
 import { MerchantProcessingComponent } from './components/merchant-processing/merchant-processing.component';
+import { MainContainerComponent } from './main-container/main-container.component';
 
 @NgModule({
   declarations: [
@@ -34,10 +35,10 @@ import { MerchantProcessingComponent } from './components/merchant-processing/me
     DashboardComponent,
     OpportunityComponent,
     OpportunityStepperComponent,
-    OpportunityFormComponent,
     OpportunityHelperComponent,
     BasicMerchantProfileComponent,
-    MerchantProcessingComponent
+    MerchantProcessingComponent,
+    MainContainerComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +61,8 @@ import { MerchantProcessingComponent } from './components/merchant-processing/me
     FormsModule,
     ReactiveFormsModule,
     NotificationModule,
-    TooltipModule
+    TooltipModule,
+    LayoutModule
   ],
   providers: [
     {

@@ -1,13 +1,23 @@
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { MainContainerComponent } from './main-container/main-container.component';
 import { OpportunityComponent } from './oppurtunity/opportunity.component';
 import { MccContainerComponent } from './shared/components/mcc-container/mcc-container.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { BasicMerchantProfileComponent } from './components/basic-merchant-profile/basic-merchant-profile.component';
+import { MerchantProcessingComponent } from './components/merchant-processing/merchant-processing.component';
+
 
 const routes: Routes = [
-  // {path:'dashboard', component: DashboardComponent},
-  {path:'mccfinder', component: MccContainerComponent},
-  {path:'', component: OpportunityComponent}
+  { path: 'mccfinder', component: MccContainerComponent },
+  { path: 'opportunity', component: OpportunityComponent,
+  children: [
+    { path: '', component: BasicMerchantProfileComponent, outlet: 'form'},
+    { path: 'basic-merchant-profile', component: BasicMerchantProfileComponent, outlet: 'form'},
+    { path: 'merchant-processing', component: MerchantProcessingComponent, outlet: 'form' }]
+  },
+  { path: '',  redirectTo: 'opportunity', pathMatch: 'full'},
+  { path: '**',  redirectTo: 'opportunity'}
 ];
 
 @NgModule({
