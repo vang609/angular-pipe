@@ -1,0 +1,113 @@
+<form  [formGroup]="merchantProcessingForm">
+  <label class="mainlable">Is this a current Wells Fargo Customer?</label>
+  <div class="row form-row">
+    <div role="group" aria-labelledby="aria-group-legend">
+      <label class="row-20"><input type="radio" name="wellsCustomer" [value]="isWFcustomer"
+        formControlName="wellsCustomer"  (change)="isWFcustomerFunc(true)" kendoRadioButton /> YES</label>
+      <label class="row-20"><input type="radio" name="wellsCustomer" [value]="!isWFcustomer"
+        formControlName="wellsCustomer" (change)="isWFcustomerFunc(false)" kendoRadioButton /> NO</label>
+    </div>
+  </div>
+  <ng-container *ngIf="isWFcustomer">
+    <label class="row form-row">Enter SSN / TIN as a Merchant Tax ID Number</label>
+    <div class="row">
+      <div class="row-45">
+        <kendo-maskedtextbox #ssnInput [mask]="'000-00-0000'" [maskOnFocus]="true"
+        formControlName="ssn"
+        class="input-holder-100w"
+        (keyup)="taxValueChange('ssn')"
+        (keyup.enter)="fetchMerchantDetials()"
+        (keyup.tab)="fetchMerchantDetials()">        
+        </kendo-maskedtextbox>
+      </div>
+      <div class="row-10 divider-label">or</div>
+      <div class="row-45">
+        <kendo-maskedtextbox #tinInput [mask]="'000-00-0000'" [maskOnFocus]="true"
+        formControlName="tin"
+        class="input-holder-100w"
+        (keyup)="taxValueChange('tin')"
+        (keyup.enter)="fetchMerchantDetials()"
+        (keyup.tab)="fetchMerchantDetials()">
+        </kendo-maskedtextbox>
+      </div>
+    </div>
+
+    <label class="row form-row">Contact Name</label>
+    <div class="row">
+      <input  placeholder="Merchant’s contact name"
+        formControlName="contactName"
+        class="input-txt-100w icon-contact" kendoTextBox />
+    </div>
+
+    <div class="row">
+      <div class="col-5 no-pad">
+        <label class="row form-row">Mobile Phone #</label>
+        <div class="row">
+          <div class="row"><input placeholder="Personal Phone Number" 
+              formControlName="mobilePhone" 
+              class="input-txt-92w icon-phone"
+              kendoTextBox /></div>
+        </div>
+      </div>
+      <div class="col-5 no-pad">
+        <label class="row form-row">Business Phone #</label>
+        <div class="row">
+          <div class="row"><input placeholder="Business Phone Number" 
+              formControlName="businessPhone" 
+              class="input-txt-100w icon-phone"
+              kendoTextBox /></div>
+        </div>
+      </div>
+    </div>
+
+    <label class="row form-row">Email Address</label>
+    <div class="row"><input placeholder="Merchant’s Email Address" 
+        formControlName="email" 
+        class="input-txt-100w icon-email"
+        kendoTextBox /></div>
+
+    <label class="row form-row">Address</label>
+    <div class="row"><input placeholder="Address, Street Number, Flat / Suite Number" 
+        formControlName="address"   
+        class="input-txt-100w icon-address" kendoTextBox /></div>
+
+    <div class="row">
+      <div class="col-3 col-33 no-pad">
+        <label class="row form-row">Zip Code</label>
+        <div class="row">
+          <!-- <kendo-maskedtextbox class="input-holder-92w" [mask]="ZipMask" [value]="zipVal"></kendo-maskedtextbox>-->
+          <input placeholder="Zip Code" 
+           formControlName="zipcode"
+          class="input-txt-92w icon-lock" kendoTextBox />
+        </div>
+      </div>
+      <div class="col-3 col-33 no-pad">
+        <label class="row form-row">City</label>
+        <div class="row">
+          <div class="row"><input placeholder="City Name" 
+            formControlName="city"   
+            class="input-txt-92w icon-lock"
+            kendoTextBox /></div>
+        </div>
+      </div>
+
+      <div class="col-3 col-33 no-pad">
+        <label class="row form-row">State</label>
+        <div class="row">
+          <!-- <kendo-combobox placeholder="State"   *ngIf="state && !isWFcustomer" [data]="state"
+            [value]="">
+          </kendo-combobox> -->
+          <input *ngIf="isWFcustomer" placeholder="State" class="input-txt-92w icon-lock"
+            formControlName="state"            
+            kendoTextBox />
+        </div>
+
+      </div>
+    </div>
+    <div class="row"></div>
+
+    <hr class="hr-line">
+    <label class="row form-row">DBA (Doing Business As) Name</label>
+    <div class="row"><input class="input-txt-100w" formControlName="dbaName"  kendoTextBox /></div>
+  </ng-container>
+</form>
