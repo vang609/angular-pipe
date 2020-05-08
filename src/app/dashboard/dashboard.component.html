@@ -1,0 +1,123 @@
+<div class="container">
+  <!-- <app-header></app-header> -->
+  <div class="row">
+    <h2 class="row-heading">Create New Opportunity</h2>
+    <button class="save-continue" kendoButton [primary]="true">Next</button>
+    <button class="cancel" kendoButton [primary]="true">Cancel</button>
+  </div>
+  <div class="row">
+    <div class="col-2-5">
+      <ng-container *ngIf="steps">
+        <div class="row step-row" [ngClass]="{'selected-step-row': selectedStep === row.name, 'prev-step-btn': i < selectedStep}"
+          *ngFor="let row of steps; let i = index;">
+          <div class="step-btn" [class.last-step-row]="i === steps.length - 1" (click)="stepClck(row.name)">{{row.name}}
+          </div>
+          <div class="step-desc">{{row.head}}
+            <span *ngIf="selectedStep === row.name">{{row.desc}}</span>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+    <div class="col-5" [ngSwitch]="selectedStep">
+      <div *ngSwitchCase="0">
+        <form>
+          <label>Is this a current Wells Fargo Customer</label>
+          <div class="row form-row">
+            <input type="radio" name="isWFcustomer" value="Yes" kendoRadioButton /> Yes
+            <input type="radio" name="isWFcustomer" value="No" kendoRadioButton /> No
+          </div>
+          <label class="row form-row">DBA Name</label>
+          <div class="row"><input class="input-txt" kendoTextBox /></div>
+          <label class="row form-row">Contact #</label>
+          <div class="row">
+            <kendo-maskedtextbox class="input-txt" [mask]="contactMask" [value]="contactVal"></kendo-maskedtextbox>
+          </div>
+          <label class="row form-row">Email Address</label>
+          <div class="row"><input class="input-txt" kendoTextBox /></div>
+          <div class="row row-93">
+            <div class="col-3 no-pad">
+              <label class="row form-row">Zip Code</label>
+              <div class="row">
+                <kendo-maskedtextbox class="input-txt" [mask]="ZipMask" [value]="zipVal"></kendo-maskedtextbox>
+              </div>
+            </div>
+            <div class="col-7 no-pad">
+              <label class="row form-row">City</label>
+              <div class="row">
+                <div class="row"><input class="input-txt" kendoTextBox /></div>
+              </div>
+            </div>
+          </div>
+          <div class="row"></div>
+          <label class="row form-row">Address</label>
+          <div class="row"><input class="input-txt" kendoTextBox /></div>
+          <label class="row form-row">State</label>
+          <div class="row">
+            <kendo-combobox *ngIf="state" [data]="state" [value]="">
+            </kendo-combobox>
+          </div>
+        </form>
+      </div>
+      <div *ngSwitchCase="1">
+        <form>
+          <label class="row form-row">MCC ID</label>
+          <div class="row">
+            <input class="input-txt" kendoTextBox />
+            <button type="button" kendoButton (click)="openMcciBox()" [look]="'flat'" [icon]="'search'"></button>
+          </div>
+          <label class="row form-row">Average Ticket(Value in USD)</label>
+          <div class="row number-box">
+            <kendo-numerictextbox [value]="1" [min]="0" [max]="100" [autoCorrect]="'false'">
+            </kendo-numerictextbox>
+          </div>
+        </form>
+      </div>
+      <div *ngSwitchCase="2">Third</div>
+      <div *ngSwitchCase="3">Fourth</div>
+      <div *ngSwitchCase="4">
+        <form>
+          <label>Product Type</label>
+          <div class="row row-93">
+            <div class="col-5 no-pad">
+
+              <div class="row form-row">
+                <kendo-dropdownlist [data]="listItems" [defaultItem]="defaultItem" [textField]="'text'"
+                  [valueField]="'value'">
+                </kendo-dropdownlist>
+              </div>
+            </div>
+            <div class="col-5 no-pad">
+              <div class="row form-row">
+                <div><input class="input-txt" kendoTextBox placeholder="Search" />
+                  <button type="button" kendoButton (click)="productlist()" [look]="'flat'" [icon]="'search'"></button>
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="row form-row">
+              <span>
+                <label>{{psubtitle}}</label>
+              </span>
+              <span>
+                <label>Total ( {{pcount}} Products) Amount: <b>{{pprice}}</b></label>
+              </span>
+            </div>
+            <label>Merchant</label>
+         
+          </div>
+        </form>
+        
+      </div>
+      <div *ngSwitchCase="5">Sixth</div>
+      <div *ngSwitchCase="6">Seventh</div>
+      <div *ngSwitchCase="7">Eight</div>
+    </div>
+    <div class="col-2-5">EDED</div>
+  </div>
+</div>
+
+<kendo-dialog title="Merchant Category Code (MCC) Finder" *ngIf="mcciDialogOpened" (close)="openMcciBox()" [minWidth]="250" [minHeight]="300" [width]="450">
+  <!-- Temporary sending hardcoded values for testing, later will bind with value from controller -->
+  <app-mcc-finder [b2bOption]=true [b2cOption]=false></app-mcc-finder>
+</kendo-dialog>
