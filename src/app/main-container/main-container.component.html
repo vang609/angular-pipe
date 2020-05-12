@@ -1,0 +1,19 @@
+<kendo-tabstrip class="container-tabstrip container-width" (tabSelect)="onTabSelect($event)">
+    <kendo-tabstrip-tab [title]="'Dashboard'">
+        <ng-template kendoTabContent>
+            <p>Dashboard Coming Soon...</p>
+        </ng-template>
+    </kendo-tabstrip-tab>
+    <kendo-tabstrip-tab [title]="'Listings'">
+        <ng-template kendoTabContent>
+            <p>Listings Coming Soon...</p>
+        </ng-template>
+    </kendo-tabstrip-tab>
+    <kendo-tabstrip-tab [title]="'Create New Proposal'" [selected]="true">
+        <ng-template kendoTabContent>
+            <p>
+                <app-opportunity></app-opportunity>
+            </p>
+        </ng-template>
+    </kendo-tabstrip-tab>
+</kendo-tabstrip>
