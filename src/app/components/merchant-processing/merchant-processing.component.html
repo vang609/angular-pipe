@@ -1,0 +1,297 @@
+<!-- <div class="row">
+    <span>MCC Finder</span>
+    <button type="button" kendoButton (click)="openMcciBox()" [look]="'flat'" [icon]="'search'"></button>
+  </div> -->
+
+<kendo-dialog title="Merchant Category Code (MCC) Finder" *ngIf="mcciDialogOpened" (close)="closeMcciBox()"
+  [width]="820" [height]="634">
+  <!-- Temporary sending hardcoded values for testing, later will bind with value from controller -->
+  <app-mcc-finder #mccFinder [b2bOption]=false [b2cOption]=false></app-mcc-finder>
+</kendo-dialog>
+
+
+<kendo-dialog title='' [width]="'100%'" [height]="84" *ngIf="closeMCCfinder" [minWidth]="150" [minHeight]="50"
+  [width]="150" class="message-dialog-container">
+  <div class="message-dialog">
+    <span class="k-icon k-i-info" ng-reflect-klass="k-icon" ng-reflect-ng-class="k-i-info"></span>
+    <p>Are you sure you want to close MCC Finder?</p>
+    <button kendoButton (click)="closeDialogAction('ok')" class="btn-secondary">OK</button>
+    <button kendoButton (click)="closeDialogAction('cancel')" class="btn-secondary">Cancel</button>
+  </div>
+</kendo-dialog>
+
+<form>
+
+
+    <div class="row">
+      <div class="col-5 no-pad right-pad-15">
+        <label for="sourcetypesb2c" class="row">% Business to Consumer (B2C)</label>
+        <div class="row">
+          <kendo-numerictextbox [value]="value" [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+          </kendo-numerictextbox>
+        </div>
+
+      </div>
+      <div class="col-5 no-pad">
+        <label class="sourcetypesb2b" class="row">% Business to Business (B2B)</label>
+        <div class="row">
+          <kendo-numerictextbox [value]="value" [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+          </kendo-numerictextbox>
+        </div>
+
+      </div>
+    </div>
+
+  <div class="row form-row">
+    <div class="row">
+
+      <label for="MCC Tax ID" class="row form-row">Merchant Category Code (MCC) </label>
+      <input type="text" placeholder="Please enter MCC Code" 
+      autocomplete="off"
+      class="input-txt-90w"
+      id="MCCTaxId" 
+      aria-label="MCC Code" 
+      tabindex="1" 
+      name="MCC Code Content"
+      [(ngModel)]="mccFinderContentStr"
+      (click)="mccFinderCode($event)"
+      kendoTextBox  />
+      <span class="ico-mcc-merchant"><img src="assets/img/binoculars.png" title="Search MCC Code"
+          (click)="openMcciBox()"></span>
+      <!-- <button type="button" kendoButton (click)="openMcciBox()" [look]="'flat'" [icon]="'search'"></button> -->
+
+    </div>
+
+    <kendo-dialog title="Merchant Category Code (MCC) Finder" *ngIf="mcciDialogOpened" (close)="closeMcciBox()"
+    [width]="820" [height]="634">
+    <!-- Temporary sending hardcoded values for testing, later will bind with value from controller -->
+    <app-mcc-finder #mccFinder [b2bOption]=false [b2cOption]=false></app-mcc-finder>
+  </kendo-dialog>
+  
+  
+  <kendo-dialog title='' [width]="'100%'" [height]="84" *ngIf="closeMCCfinder" [minWidth]="150" [minHeight]="50"
+    [width]="150" class="message-dialog-container">
+    <div class="message-dialog">
+      <span class="k-icon k-i-info" ng-reflect-klass="k-icon" ng-reflect-ng-class="k-i-info"></span>
+      <p>Are you sure you want to close MCC Finder?</p>
+      <button kendoButton (click)="closeDialogAction('ok')" class="btn-secondary">OK</button>
+      <button kendoButton (click)="closeDialogAction('cancel')" class="btn-secondary">Cancel</button>
+    </div>
+  </kendo-dialog>
+
+  </div>
+  <hr class="hr-line">
+
+  <div class="row">
+    <div class="col-5 no-pad right-pad-15">
+      <label class="row form-row">Average Ticket (in USD)</label>
+      <div class="row">
+        <kendo-numerictextbox [value]="value" [min]="0" [max]="100" [autoCorrect]="autoCorrect" class="numTxtBox" tabindex="2">
+        </kendo-numerictextbox>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-5 no-pad right-pad-15">
+      <label class="row form-row">% Card Present (CP)</label>
+      <div class="row">
+        <kendo-numerictextbox [value]="value" [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+        </kendo-numerictextbox>
+      </div>
+
+    </div>
+    <div class="col-5 no-pad">
+      <label class="row form-row">% Card Not Present (CNP)</label>
+      <div class="row">
+        <kendo-numerictextbox [value]="value" [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+        </kendo-numerictextbox>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row">
+  <div role="group" aria-labelledby="aria-group-legend">
+    <label class="row form-row bottom-pad-10">Do you process 100% of your transactions over the internet?</label>
+    <div class="row-20 bottom-pad-10">
+      <input type="radio" name="transactionsVal" value="isTransactionsYes" 
+      [(ngModel)]="model.transactionsVal" id="t1" tabindex="0" kendoRadioButton /><label for="t1" class="lable-normal"> Yes </label>
+    </div>
+    <div class="row-20 bottom-pad-10">
+      <input type="radio" name="transactionsVal" value="!isTransactionsYes" 
+      [(ngModel)]="model.transactionsVal" id="t2" tabindex="0" kendoRadioButton /><label for="t2" class="lable-normal"> No </label>
+    </div>
+  </div>
+</div>
+
+  <div class="row">
+    <div class="col-5 no-pad right-pad-15">
+      <label class="row form-row">Processing Type</label>
+      <div class="row">
+        <kendo-dropdownlist [defaultItem]="processingType" [data]="processingTypes" [textField]="'text'"
+          [valueField]="'value'" [disabled]="!this.mccFinderContentStr">
+        </kendo-dropdownlist>
+      </div>
+    </div>
+    <div class="col-5 no-pad">
+      <label class="row form-row">Processing Option</label>
+      <div class="row">
+        <kendo-dropdownlist [defaultItem]="processingOption" [data]="processingOptions" [textField]="'text'"
+          [valueField]="'value'" [disabled]="!this.mccFinderContentStr">
+        </kendo-dropdownlist>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-5 no-pad">
+      <label class="row form-row bottom-pad-10">Communication Method</label>
+      <div class="row bottom-pad-10">
+        <input type="radio" name="comnmethod" value="one" [(ngModel)]="model.comnmethod" id="n1" kendoRadioButton /><label for="n1" class="lable-normal"> Dial (A)</label>
+      </div>
+      <div class="row bottom-pad-10">
+        <input type="radio" name="comnmethod" value="two" [(ngModel)]="model.comnmethod" id="n2" kendoRadioButton /><label for="n2" class="lable-normal"> Frame Relay (C) </label>
+      </div>
+      <div class="row bottom-pad-10">
+        <input type="radio" name="comnmethod" value="three" [(ngModel)]="model.comnmethod" id="n3" kendoRadioButton /><label for="n3" class="lable-normal"> Frame/Internet (M)</label>
+      </div>
+      <div class="row bottom-pad-10">
+        <input type="radio" name="comnmethod" value="four" [(ngModel)]="model.comnmethod" id="n4" kendoRadioButton /><label for="n4" class="lable-normal"> Datawire (IPN)</label>
+      </div>
+      <div class="row bottom-pad-10">
+        <input type="radio" name="comnmethod" value="five" [(ngModel)]="model.comnmethod" id="n5" kendoRadioButton /><label for="n5" class="lable-normal"> Lease (M)</label>
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="hr-line">
+
+  
+  <div class="row">
+    <table class="table-textbox-style">
+      <tr>
+          <td class="bottom-border" width="54%"><label class="td-label">Total Estimate Annual Volume</label></td>
+          <td class="bottom-border input-col-2"> <input type="text" value="$ 0.00">
+    </td>
+          <td class="bottom-border"><a href="">Confirm</a></td>
+      </tr>
+      <tr>
+          <td colspan="3" class="table-td-holder">
+              <table width="100%">
+                  <tr>
+                    <td class="bottom-border" width="50%"><label class="td-label-icon">Annual Visa / Master Card</label></td>
+                    <td class="bottom-border input-col-2" width="40%"> <input type="text" value="$ 0.00"> </td>
+                    <td><a href="">Confirm</a></td>
+                  </tr>
+                  <tr>
+                    <td class="bottom-border"><label class="td-label-icon">Discover</label></td>
+                    <td class="bottom-border input-col-2">$0.00</td>
+                    <td><a href="">Confirm</a></td>
+                  </tr>
+                  <tr>
+                    <td class="bottom-border"><label class="td-label-icon">American Express</label></td>
+                    <td class="bottom-border input-col-2">$0.00</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><label class="td-label-icon">PIN Debit Volume</label></td>
+                    <td class="input-col-2"> <input type="text" value="$ 0.00"> </td>
+                    <td></td>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+    </table>
+  </div>
+ 
+
+
+  <!-- <div class="row">
+    <div class="col-5 no-pad">
+      <label class="row form-row">Total Estimate Annual Volume</label>
+    </div>
+    <div class="col-5 no-pad">
+      <label class="row form-row right-align right-pad-40">{{totalEstimatedValue}}</label>
+    </div>
+
+    <div class="row">
+      <table class="table-textbox">
+        <tr>
+          <td>
+            Visa / Master Card
+          </td>
+          <td>
+            <kendo-numerictextbox [value]="value" [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+            </kendo-numerictextbox>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Discover
+          </td>
+          <td>
+            <kendo-numerictextbox [value]="value" [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+            </kendo-numerictextbox>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            American Express
+          </td>
+          <td>
+            <kendo-numerictextbox [value]="value" [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+            </kendo-numerictextbox>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            PIN Debit Volume
+          </td>
+          <td>
+            <kendo-numerictextbox [value]="value" [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+            </kendo-numerictextbox>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+
+    
+  </div> -->
+
+  <div class="row">
+    
+      <label for="loc" class="row form-row"><div id='loc'>Does merchant have more than one location?</div></label>
+
+      <div class="row-20">
+        <input type="radio" name="location" value="first_loc" [(ngModel)]="model.location" id='rd1'
+        (click)="numOfLocation(true)"
+        kendoRadioButton /><label for="rd1"> Yes </label>
+      </div>
+      <div class="row-20">
+        <input type="radio" name="location" value="second_loc" [(ngModel)]="model.location" id='rd2'
+        (click)="numOfLocation(false)"
+        kendoRadioButton /><label for="rd2"> No </label>
+      </div>
+
+    
+  </div>
+
+  <div class="row" *ngIf="isLocation">
+    <div class="col-3 no-pad">
+    <label for="locations" class="row form-row"><div id='locations'>Number of Locations</div></label>
+      
+    <div class="row">
+      <kendo-numerictextbox  type="number" [format]="'null'" [value]="value"  [min]="0" [max]="100" [autoCorrect]="autoCorrect">
+      </kendo-numerictextbox>
+    </div>
+  </div>
+  
+</div><br/>
+
+</form>
