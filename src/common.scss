@@ -362,7 +362,18 @@ label.form-row {
     padding-top: 5px;
 }
 
-
+.m-3{
+    margin:3px 0;
+}
+.mt-10{
+    margin-top:10px;
+}
+.border-bottom-dash{
+    border-bottom: 1px dashed $border-color;
+}
+.border-bottom-1{
+    border-bottom: 1px solid $border-color;
+}
 .bottom-pad-10 {
     padding-bottom: 10px;
 }
@@ -736,10 +747,6 @@ body {
     width: 100% !important;
 }
 
-.k-state-disabled{
-
-}
-
 .k-dropdown .k-dropdown-wrap .k-input {
     height: calc(15px + 1.4285714286em) !important;
 }
@@ -869,6 +876,57 @@ body {
     float: left;
     padding-top:6px;
 }
+
+/*---------------------- Help section ---------------------------*/
+.help-section h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    margin-top:0;
+}
+.help-section h3{
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.table-data-2{
+    width: 100%;
+    border-spacing: 0;
+
+    td{
+        padding:8px 0;
+    }
+}
+.table-data{
+    border-left:1px solid $label-color;
+    border-spacing: 0;
+    border-top:1px solid $label-color;
+    
+
+    th{
+        background-color: $label-color;
+        color:$white-color;
+        font-size: 11px;
+        text-align: left;
+        padding:8px 4px;
+    }
+
+    td{
+        border-right:1px solid $label-color;
+        border-bottom:1px solid $label-color;
+        font-size: 12px;
+        background-color: $white-color;
+        padding:8px 4px; 
+    }
+    
+}
+.text-align-right{
+    text-align: right;
+}
+.text-bold{
+    font-weight: bold;
+}
+
 /*----------------------Grid Class Start--------------------------*/
 .k-dialog-titlebar {
     border-color: $white-color !important;

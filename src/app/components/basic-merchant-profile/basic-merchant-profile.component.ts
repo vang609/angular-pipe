@@ -438,4 +438,9 @@ export class BasicMerchantProfileComponent implements OnInit, OnDestroy, AfterCo
     }
   }
 
+  closeWarning() {
+    this.showNonWellsFargoMsg = false;  
+    this.merchantProcessingForm.get('wellsCustomer').patchValue(true);
+  }
+
 }
