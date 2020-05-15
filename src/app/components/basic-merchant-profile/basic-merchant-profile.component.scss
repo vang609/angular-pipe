@@ -1,0 +1,57 @@
+@import '../../../common.scss';
+
+.container {
+    display: block;
+    width: $outlet-width;
+    height: 100%;
+    background-color: $tab-content-background;
+    padding: 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    .save-continue {
+        float: right;
+        margin-left: 10px;
+    }
+
+    .cancel {
+        float: right;
+        margin-left: 10px;
+        background-color: $tab-content-background;
+        border-color: $tab-content-background;
+        color: $label-color;
+        background-image: none;
+        text-decoration: underline;
+        width: 100px;
+    }
+}
+
+.divider-label {
+    text-align: center;
+    line-height: 36px;
+    font-weight: bold;
+    color: $label-color;
+}
+
+.has-danger {    
+    border: 1px solid red !important;
+}
+
+.k-dialog-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    position: fixed;
+    top: 120px;
+    left: auto;
+    width: 520px;
+    height:auto;
+}
+.k-dialog {
+    width: auto !important;
+}
+.k-dialog-content .message-dialog p{
+    line-height: 1.4 !important;
+    margin-top:5px !important;
+}
