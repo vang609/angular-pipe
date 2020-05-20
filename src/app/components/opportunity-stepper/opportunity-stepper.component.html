@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-10 no-pad">
+    <ng-container *ngIf="steps">
+      <div class="row step-row"
+        [ngClass]="row.activateStep && row.formValid && row.completedForm ? 'completed-step' : (row.formValid && row.completedForm ? 'prev-step' : (row.activateStep ? 'current-step' : '' ))"
+        *ngFor="let row of steps; let i = index;">
+        <div class="step-btn" [class.last-step-row]="i === steps.length - 1" (click)="stepClick(row)">{{row.name}}
+        </div>
+        <div class="step-desc">{{row.head}}
+          <span *ngIf="row.activateStep">{{row.desc}}</span>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
