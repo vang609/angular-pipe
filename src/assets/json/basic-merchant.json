@@ -1,0 +1,36 @@
+{
+    "statusInfo": [
+       
+    ],
+   "customers": [
+    {
+        "name": "awetest_072920119173230",
+        "number": "453689321",
+        "entityType": "induvidual",
+        "dateOfBirth": "5/2/1981 12:00:00 AM",
+        "ssn": "678451234",        
+        "sourceName": "WCIS",
+        "addresses": [
+            {
+                "addressType": "REGISTERED",
+                "region": "domestic",                
+                "country": "US",
+                "street_address1": "1800 BIG OAK RD",
+                "street_address2": "71201-4624",
+                "street_address3": "APT 666",
+                "zipCode": "26209",
+                "contactPhone": "0123456789",
+                "mail": "test@wells.com",
+                "city": "MONROE",
+                "state": "NC"
+
+            },
+            {
+                "addressType": "PHYSICAL",
+                "region": "domestic",                
+                "country": "US"                
+            }
+        ]
+    }
+   ]
+}

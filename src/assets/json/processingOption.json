@@ -1,0 +1,51 @@
+{
+    "result": {
+        "processingType": null,
+        "processingOptions": [
+            {
+                "id": "6F12EEF2-4EC5-E511-9425-005056A5XXXX",
+                "code": "003",
+                "name": "MOTO w/AVS",
+                "description": "MOTO w/ AVS"
+            },
+            {
+                "id": "4B12EEF2-4EC5-E511-9425-005056A554EA",
+                "code": "012",
+                "name": "Convenience Rate",
+                "description": "Convenience Rate"
+            },
+            {
+                "id": "5112EEF2-4EC5-E511-9425-005056A554EA",
+                "code": "013",
+                "name": "Emerging Markets",
+                "description": "Emerging Markets"
+            },
+            {
+                "id": "8312EEF2-4EC5-E511-9425-005056A554EA",
+                "code": "024",
+                "name": "Utility",
+                "description": "Utility"
+            },
+            {
+                "id": "6912EEF2-4EC5-E511-9425-005056A554EA",
+                "code": "027",
+                "name": "Merit III/ Small Ticket",
+                "description": "Merit III/ Small Ticket"
+            },
+            {
+                "id": "6B12EEF2-4EC5-E511-9425-005056A554EA",
+                "code": "142",
+                "name": "Merit III/Emerging Market",
+                "description": "Merit III/Emerging Market"
+            },
+            {
+                "id": "5B12EEF2-4EC5-E511-9425-005056A554EA",
+                "code": "146",
+                "name": "Inergy Propane",
+                "description": "Inergy Propane"
+            }
+        ]
+    },
+    "statusCode": 200,
+    "message": "Successfully received eligible processing selections."
+}
